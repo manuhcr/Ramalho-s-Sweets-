@@ -1,0 +1,119 @@
+body {
+    background-color: #FFDDDD;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+}
+
+.logo {
+    align-items: center !important;
+}
+
+.logomarca {
+    align-items: center !important;
+}
+
+.chocolate-drip {
+    background-color: #A86B49;
+    height: 10px;
+}
+
+.links {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 24px;
+}
+
+.links:hover {
+    color: #682f10;
+    transition: all 0.2s;
+}
+
+.link {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.search-input {
+    position: absolute;
+    left: 2px;
+}
+
+.search {
+    padding: 10px;
+    margin: 40px;
+    border-radius: 20px;
+    border: 2px #682f10 solid !important;
+    background: #e7dbd4;
+
+}
+
+::-webkit-input-placeholder {
+    color: rgb(99, 40, 6);
+}
+
+.search-img {
+    top: 18px;
+    position: relative;
+    left: 30px;
+}
+
+.img-banner {
+    width: 100%;
+
+}
+
+#sliders {
+    /*Remove o bullet*/
+    list-style: none;
+    /* Define que position:relative porque os 
+	 * elementos filhos usarão absolute
+	 */
+    position: relative;
+    /*Define a largura*/
+    margin: 0 auto;
+    /*Oculta os elementos que ultrapassarem 
+	* as dimensões definidas
+	*/
+    overflow: hidden;
+}
+
+/*Configuremos os itens do slide*/
+#slider li {
+    /*Definimos como posição absoluta, seguindo o elemento pai*/
+    position: absolute;
+    /*Define que ficará encostado no topo*/
+    top: 0;
+    /*Define que ficará enconstado do lado esquerdo*/
+    left: 0;
+    /*Coloca a opacidade zero, pra ocultar*/
+    opacity: 0;
+    /*Define ordenação relacionados os elementos*/
+    z-index: 0;
+    /*Cria uma transição da opacidade com 1 segundo*/
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+/* Agora defiremos uma classe 
+ * que mostrar o item atual
+ */
+#sliders li.slider-active {
+    /*Ordena que ficará a frente dos itens*/
+    z-index: 1;
+    /*Mostra o slide atual*/
+    opacity: 1;
+}
