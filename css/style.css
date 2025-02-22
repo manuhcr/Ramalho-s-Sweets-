@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*navbar*/
 .navbar {
     background-color: #EB8D96;
     display: flex;
@@ -45,7 +45,7 @@ body {
     justify-content: space-between;
     margin: 20px;
 }
-
+/*search*/
 .search-input {
     position: absolute;
     left: 2px;
@@ -74,6 +74,7 @@ body {
     width: 100%;
 
 }
+/*Slider*/
 
 .slider-container {
     position: relative;
@@ -96,4 +97,9 @@ body {
 .slide img {
     width: 100%;
     height: auto;
+}
+/*Sobre nós*/
+.sobre {
+    font-family: "Atma", serif;
+    color: #e7dbd4;
 }
