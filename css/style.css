@@ -20,10 +20,6 @@ body {
     align-items: center !important;
 }
 
-.chocolate-drip {
-    background-color: #A86B49;
-    height: 10px;
-}
 
 .links {
     font-family: "Atma", serif;
@@ -106,15 +102,27 @@ body {
 .sobretitle {
     font-family: "Atma", serif;
     color: #221107;
+    text-align: center;
 }
 
 .img-doceria {
     float: left;
     margin-right: 20px;
+    width: 30%;
+    border-radius: 20%;
+    border: 5px solid #5a2100;
 }
 
 .sobre {
-    font-family: "Atma", serif;
+    margin-top: 3%;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
     clear: left;
+}
+
+.divsobre {
+    display: flex !important;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2% !important;
 }
