@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /*navbar*/
 .navbar {
     background-color: #EB8D96;
@@ -45,6 +46,7 @@ body {
     justify-content: space-between;
     margin: 20px;
 }
+
 /*search*/
 .search-input {
     position: absolute;
@@ -74,6 +76,7 @@ body {
     width: 100%;
 
 }
+
 /*Slider*/
 
 .slider-container {
@@ -86,7 +89,7 @@ body {
 .slider {
     display: flex;
     transition: transform 1s ease;
-   
+
 }
 
 .slide {
@@ -98,7 +101,13 @@ body {
     width: 100%;
     height: auto;
 }
+
 /*Sobre nós*/
+.sobretitle {
+    font-family: "Atma", serif;
+    color: #e7dbd4;
+}
+
 .sobre {
     font-family: "Atma", serif;
     color: #e7dbd4;
