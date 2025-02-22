@@ -108,7 +108,13 @@ body {
     color: #221107;
 }
 
+.img-doceria {
+    float: left;
+    margin-right: 20px;
+}
+
 .sobre {
     font-family: "Atma", serif;
     color: #5a2100;
+    clear: left;
 }
