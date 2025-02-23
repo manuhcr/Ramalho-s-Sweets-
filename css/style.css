@@ -137,6 +137,17 @@ body {
     top: 300px;
     position: absolute;
 }
+
+.localização {
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: 70px;
+    top: 300px;
+    position: absolute;
+}
+
 .localtitle {
     font-family: "Atma", serif;
     color: #221107;
