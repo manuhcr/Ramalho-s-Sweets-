@@ -106,6 +106,9 @@ body {
 }
 
 .img-doceria {
+    float: left;
+    margin-right: 20px;
+    width: 30%;
     border-radius: 20%;
     border: 5px solid #5a2100;
 }
@@ -118,5 +121,8 @@ body {
 }
 
 .divsobre {
-    display: flex !important;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
 }
