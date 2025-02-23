@@ -137,3 +137,10 @@ body {
     top: 300px;
     position: absolute;
 }
+.localtitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
