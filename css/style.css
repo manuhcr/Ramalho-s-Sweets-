@@ -108,7 +108,7 @@ body {
 .img-doceria {
     float: left;
     margin-right: 20px;
-    width: 30%;
+    width: 50%;
     border-radius: 20%;
     border: 5px solid #5a2100;
 }
@@ -122,7 +122,5 @@ body {
 
 .divsobre {
     display: flex !important;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 2% !important;
+   
 }
