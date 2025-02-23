@@ -155,3 +155,10 @@ body {
     position: relative;
     top: 130px;
 }
+
+.local {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    position: relative;
+}
