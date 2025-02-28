@@ -167,11 +167,13 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    border: #5a2100 solid 3px;
-    margin: 70px;
     top: 680px;
     position: absolute;
+}
+
+.localizacao iframe {
+    border: #5a2100 solid 3px;
+    border-radius: 20px;
 }
