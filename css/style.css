@@ -162,3 +162,11 @@ body {
     text-align: center;
     position: relative;
 }
+
+.localizaçao iframe {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    border: #5a2100 solid 3px;
+}
