@@ -119,7 +119,6 @@ body {
 }
 
 .sobre {
-    margin-top: 10%;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
     column-gap: 30px;
@@ -152,10 +151,8 @@ body {
     color: #221107;
     text-align: center;
     position: relative;
-    top: 8px;
-    top: 8px;
+    top: 570px;
 }
-
 .local {
     font-family: "Atma", serif;
     color: #221107;
