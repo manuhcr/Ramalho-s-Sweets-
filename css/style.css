@@ -119,7 +119,7 @@ body {
 }
 
 .sobre {
-    margin-top: 3%;
+    margin-top: 10%;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
     column-gap: 30px;
@@ -133,19 +133,18 @@ body {
     justify-content: center;
     align-content: center;
     justify-content: space-around;
-    margin: 70px;
+    margin: 180px;
     top: 300px;
     position: absolute;
 }
 
-.localização {
-    align-self: center;
+.localizacao {
+    align-items: center;
     justify-content: center;
     align-content: center;
-    justify-content: space-around;
-    margin: 70px;
-    top: 400px;
-    position: absolute;
+    display: flex;
+    top: 680px;
+    position: relative;
 }
 
 .localtitle {
@@ -168,10 +167,11 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    top: 680px;
-    position: absolute;
+    top: 580px;
+    position: relative;
 }
 
 iframe {
