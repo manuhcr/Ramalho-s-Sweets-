@@ -1,11 +1,11 @@
 body {
-    background-color: #FFDDDD;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%) !important;
 }
 
-/*navbar*/
+/* navbar*/
 .navbar {
     background-color: #EB8D96;
     display: flex;
@@ -45,31 +45,6 @@ body {
     margin: 20px;
 }
 
-/*search*/
-.search-input {
-    position: absolute;
-    left: 2px;
-}
-
-.search {
-    padding: 10px;
-    margin: 40px;
-    border-radius: 20px;
-    border: 2px #682f10 solid !important;
-    background: #e7dbd4;
-
-}
-
-::-webkit-input-placeholder {
-    color: rgb(99, 40, 6);
-}
-
-.search-img {
-    top: 18px;
-    position: relative;
-    left: 30px;
-}
-
 .img-banner {
     width: 100%;
 
@@ -78,6 +53,7 @@ body {
 /*Slider*/
 
 .slider-container {
+    position: absolute;
     position: absolute;
     max-width: 600px;
     margin: 50px auto;
@@ -89,6 +65,7 @@ body {
     transition: transform 1s ease;
     top: 124px;
     position: relative;
+    z-index: -1;
     z-index: -1;
 }
 
@@ -108,22 +85,20 @@ body {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    position: relative;
-    top: 130px;
+    margin-top: 160px;
 }
 
 .img-doceria {
     width: 30%;
     height: 30%;
     border-radius: 30%;
-    border: #5a2100 solid 3px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .sobre {
-    margin-top: 3%;
+    margin-top: 40px;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
-    column-gap: 30px;
 }
 
 .divsobre {
@@ -134,48 +109,49 @@ body {
     justify-content: center;
     align-content: center;
     justify-content: space-around;
-    margin: 70px;
-    top: 300px;
-    position: absolute;
-}
-
-.localização {
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    justify-content: space-around;
-    margin: 70px;
-    top: 400px;
-    position: absolute;
+    margin: 50px;
 }
 
 .localtitle {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    position: relative;
-    top: 8px;
-    top: 8px;
+    top: 570px;
 }
 
 .local {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    position: relative;
 }
 
 .localizacao {
     align-items: center;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     top: 680px;
-    position: absolute;
 }
 
-iframe {
-    border: #5a2100 solid 3px;
+.endereco {
+    font-size: 20px;
+    color: #221107 !important;
+    font-family: "Atma", serif;
+}
+
+.mapa {
+    border: #bd8a6f 2px solid !important;
     border-radius: 20px;
+
+}
+
+.doces {
+    border-radius: 100%;
+    width: 130px;
+}
+
+.doces:hover {
+    transform: scale(1);
 }
