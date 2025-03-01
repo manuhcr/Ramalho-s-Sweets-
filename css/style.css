@@ -7,12 +7,11 @@ body {
 
 /*navbar*/
 .navbar {
-    position: fixed;
-    z-index: 1;
     background-color: #EB8D96;
     display: flex;
     justify-content: center !important;
     width: 100%;
+    position: fixed;
 }
 
 .logo {
@@ -79,7 +78,7 @@ body {
 /*Slider*/
 
 .slider-container {
-    position: relative;
+    position: absolute;
     max-width: 600px;
     margin: 50px auto;
     overflow: hidden;
@@ -90,7 +89,9 @@ body {
     transition: transform 1s ease;
     top: 124px;
     position: relative;
+    z-index: -1;
 }
+
 
 .slide {
     min-width: 100%;
