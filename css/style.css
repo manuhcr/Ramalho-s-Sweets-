@@ -112,6 +112,9 @@ body {
     margin: 50px;
 }
 
+/* fim sobre */
+
+/* Endereço */
 .localtitle {
     font-family: "Atma", serif;
     color: #221107;
@@ -146,23 +149,35 @@ body {
     border-radius: 20px;
 }
 
+/* fim endereço */
+/* Cardápio */
+
 .doces {
-    border-radius: 28%;
+    opacity: 50%;
+    border-radius: 100%;
     margin-top: 108px;
     width: 158px;
     height: 180px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 20px;
+    box-shadow: rgba(168, 133, 112, 0.952) 0px 3px 40px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
+
+.doces:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    transition: all 0.8s;
+}
+
 
 
 .divcardapio {
     align-items: center;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
     top: 680px;
+    flex-wrap: wrap;
 
 }
 
@@ -171,6 +186,14 @@ body {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
+}
+
+.cardapiosubtitle {
+    margin-top: 1px;
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    font-size: 18px;
 }
 
 .d-flex {
@@ -182,7 +205,7 @@ body {
     padding: 30px;
     margin: 20px;
     border-radius: 20px;
-    background-color: #ffdddd;
+    background-color: #fffaf27e;
 }
 
 .d-flex:hover {
@@ -190,9 +213,66 @@ body {
     transition: all 0.8s;
 }
 
-.d-flex li {
+ul li {
     list-style: none;
     color: #704932;
     font-size: 20px;
+    padding: 4px;
     font-family: "Atma", sans-serif;
 }
+
+.cardapiotitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Modal cardápio */
+.modalcardapio {
+    transition: all 0.8s;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalcardapio-content {
+    font-family: "Atma", serif;
+    color: #582305;
+    border: #582305 2px solid;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #fffaf2;
+    text-align: left;
+    position: relative;
+    width: 60%;
+}
+
+.modalcardapio-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* fim cardápio */
+/* Contato */
+.contato {
+    margin-top: 40px;
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+}
+
+/* fim contato */

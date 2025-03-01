@@ -91,7 +91,7 @@
     </main>
     <main>
         <section>
-            <div class="divcardapio">
+            <!-- <div class="divcardapio">
                 <h1 class="cardapiotitle">Nosso cardápio açucarado</h1>
                 <div class="d-flex">
                     <img class="doces" src="./imagens/bolosetortas.png" alt="" class="img-banner">
@@ -154,13 +154,61 @@
                         <li> Torta de maçã caramelizada<strong>– R$ 55,90 (1kg)</strong></li>
                     </div>
                 </div>
-
+ -->
 
             </div>
 
+
+            <h1 class="cardapiotitle">Nosso cardápio açucarado</h1>
+            <div class="divcardapio">
+                <div>
+                    <img class="doces" src="./imagens/bolosetortas.png" alt="Bolos e Tortas"
+                        onclick="abrirModal('bolos')">
+                    <h2 class="cardapiosubtitle">Bolos e Tortas</h2>
+                </div>
+
+                <div>
+                    <img class="doces" src="./imagens/docesbrasileiros.webp" alt="Doces Brasileiros"
+                        onclick="abrirModal('doces')">
+                    <h2 class="cardapiosubtitle">Doces Brasileiros</h2>
+                </div>
+                <div>
+                    <img class="doces" src="./imagens/sobremesasgeladas (2).webp" alt="Bolos e Tortas"
+                        onclick="abrirModal('colddesserts')">
+                    <h2 class="cardapiosubtitle">Sobremesas geladas</h2>
+                </div>
+
+                <div>
+                    <img class="doces" src="./imagens/chocobrownies.webp" alt="Doces Brasileiros"
+                        onclick="abrirModal('chocoandbrownie')">
+                    <h2 class="cardapiosubtitle">Chocolates e Brownies</h2>
+                </div>
+                <div>
+                    <img class="doces" src="./imagens/docesespeciais.webp" alt="Doces Brasileiros"
+                        onclick="abrirModal()">
+                    <h2 class="cardapiosubtitle">Doces Especiais</h2>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="modalcardapio" class="modalcardapio">
+                <div class="modalcardapio-content">
+                    <span class="close" onclick="fecharModal()">x</span>
+                    <div id="modalcardapio-Conteudo">
+                        <!-- Conteúdo dinâmico será inserido aqui pelo innerhtml do script.js-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="contato">
+                <h1 class="contato">Quer encomendar? Contate (11) 96922-4484 ou visite nossa doceria</h1>
+            </div>
         </section>
     </main>
-</body>f
-<script src="./js/script.js"></script>
+</body>
+<script src=" ./js/script.js">
+</script>
 
 </html>
