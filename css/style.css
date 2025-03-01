@@ -139,14 +139,14 @@ body {
     position: absolute;
 }
 
-.localizacao {
+/* .localizacao {
     align-items: center;
     justify-content: center;
     align-content: center;
     display: flex;
     top: 680px;
-    /* position: relative; */
-}
+    position: relative;
+} */
 
 .localtitle {
     font-family: "Atma", serif;
@@ -163,16 +163,16 @@ body {
     /* position: relative; */
 }
 
-/* .localizacao {
+.localizacao {
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    top: 580px;
+    top: 680px;
     position: relative;
-} */
+}
 
 .endereco {
     font-size: 20px;
