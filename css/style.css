@@ -176,7 +176,7 @@ body {
 
 .d-flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     row-gap: 20px;
 }
 
