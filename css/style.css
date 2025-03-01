@@ -144,9 +144,12 @@ body {
     border-radius: 20px;
 
 }
+
 .doces {
     border-radius: 100%;
+    width: 130px;
 }
+
 .doces:hover {
     transform: scale(1);
 }
