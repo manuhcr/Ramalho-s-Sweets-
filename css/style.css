@@ -152,7 +152,7 @@ body {
 /* fim endereço */
 /* Cardápio */
 .imagensmodal {
-    padding: 20px;
+    padding: 10px;
 }
 
 .doces {
@@ -271,7 +271,7 @@ ul li {
 /* fim cardápio */
 /* Contato */
 .contato {
-    margin-top: 40px;
+    margin-top: 120px;
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
