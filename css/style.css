@@ -147,16 +147,13 @@ body {
 }
 
 .doces {
-    border-radius: 100%;
-    margin-top: 80px;
-    width: 200px;
-    height: 200px;
+    border-radius: 28%;
+    margin-top: 108px;
+    width: 158px;
+    height: 180px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.doces:hover {
-    transform: scale(1.2);
-    transition: all 0.8s;
-}
 
 .divcardapio {
     align-items: center;
@@ -166,6 +163,7 @@ body {
     display: flex;
     flex-direction: column;
     top: 680px;
+
 }
 
 .cardapiotitle {
@@ -178,11 +176,23 @@ body {
 .d-flex {
     display: flex;
     flex-direction: row-reverse;
-    row-gap: 20px;
-    font-size: 20px;
+    font-family: "Atma", serif;
+    color: #582305;
+    border: #582305 2px solid;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #ffdddd;
+}
+
+.d-flex:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
 }
 
 .d-flex li {
     list-style: none;
     color: #704932;
+    font-size: 20px;
+    font-family: "Atma", sans-serif;
 }
