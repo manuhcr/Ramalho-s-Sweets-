@@ -5,10 +5,10 @@ body {
     background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%) !important; 
 }
 
-/*navbar*/
-/* .navbar {
-    position: fixed;
-    z-index: 1;
+/* navbar*/
+.navbar {
+    /* position: relative;
+    z-index: 1; */
     background-color: #EB8D96;
     display: flex;
     justify-content: center !important;
@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
-} */
+}
 
 .img-banner {
     width: 100%;
