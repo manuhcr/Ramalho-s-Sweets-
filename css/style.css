@@ -176,13 +176,14 @@ body {
 }
 
 .endereco {
-    font-size: 25px;
+    font-size: 35px;
     color: #221107 !important;
     font-family: "Atma", serif;
     top: 4px;
 }
 
-iframe {
+.mapa {
     border:#5a2100 3px solid !important;
     border-radius: 20px;
+
 }
