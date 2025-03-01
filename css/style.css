@@ -145,14 +145,14 @@ body {
     align-content: center;
     display: flex;
     top: 680px;
-    position: relative;
+    /* position: relative; */
 }
 
 .localtitle {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     top: 570px;
 }
 
@@ -160,10 +160,10 @@ body {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    position: relative;
+    /* position: relative; */
 }
 
-.localizacao {
+/* .localizacao {
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -172,7 +172,7 @@ body {
     flex-direction: column;
     top: 580px;
     position: relative;
-}
+} */
 
 .endereco {
     font-size: 20px;
