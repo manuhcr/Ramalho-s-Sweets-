@@ -151,12 +151,15 @@ body {
 
 /* fim endereço */
 /* Cardápio */
+.imagensmodal {
+    padding: 20px;
+}
 
 .doces {
     opacity: 50%;
     border-radius: 100%;
     margin-top: 108px;
-    width: 158px;
+    width: 180px;
     height: 180px;
     margin: 20px;
     box-shadow: rgba(168, 133, 112, 0.952) 0px 3px 40px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -178,7 +181,6 @@ body {
     display: flex;
     top: 680px;
     flex-wrap: wrap;
-
 }
 
 .cardapiotitle {
