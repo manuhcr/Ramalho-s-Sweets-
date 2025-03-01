@@ -1,5 +1,6 @@
 body {
-    background-color: #FFDDDD;
+    background: rgb(255, 221, 221);
+    background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -183,7 +184,7 @@ body {
 }
 
 .mapa {
-    border:#5a2100 3px solid !important;
+    border: #5a2100 3px solid !important;
     border-radius: 20px;
 
 }
