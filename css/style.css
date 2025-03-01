@@ -5,8 +5,7 @@ body {
 }
 
 main {
-    /* background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%); */
-    background-color: pink;
+    background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%); 
 }
 
 /*navbar*/
@@ -120,6 +119,7 @@ main {
     height: 30%;
     border-radius: 30%;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: absolute;
 }
 
 .sobre {
