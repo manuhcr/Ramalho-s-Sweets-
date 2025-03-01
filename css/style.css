@@ -163,7 +163,7 @@ body {
     align-content: center;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     top: 680px;
 }
 
@@ -177,6 +177,7 @@ body {
 .d-flex {
     display: flex;
     flex-direction: row;
+    row-gap: 20px;
 }
 
 .d-flex li {
