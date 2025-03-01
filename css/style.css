@@ -177,14 +177,14 @@ body {
 }
 
 .endereco {
-    font-size: 35px;
+    font-size: 25px;
     color: #221107 !important;
     font-family: "Atma", serif;
     top: 4px;
 }
 
 .mapa {
-    border: #5a2100 3px solid !important;
+    border: #8d5a3c 3px solid !important;
     border-radius: 20px;
 
 }
