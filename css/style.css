@@ -144,12 +144,13 @@ body {
 .mapa {
     border: #bd8a6f 2px solid !important;
     border-radius: 20px;
-
 }
 
 .doces {
-    border-radius: 58%;
-    width: 130px;
+    border-radius: 100%;
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
 }
 
 .doces:hover {
@@ -178,6 +179,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     row-gap: 20px;
+    font-size: 20px;
 }
 
 .d-flex li {
