@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-main {
-    background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%); 
+    background: linear-gradient(221deg, rgba(255, 221, 221, 1) 14%, rgba(255, 255, 255, 1) 48%, rgba(255, 225, 208, 1) 100%) !important; 
 }
 
 /*navbar*/
@@ -119,12 +116,10 @@ main {
     height: 30%;
     border-radius: 30%;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    position: absolute;
 }
 
 .sobre {
     top: 30px;
-    position: relative;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
     column-gap: 30px;
