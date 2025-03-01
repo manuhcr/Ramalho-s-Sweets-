@@ -83,7 +83,7 @@ body {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 160px;
 }
 
 .img-doceria {
@@ -143,4 +143,10 @@ body {
     border: #bd8a6f 2px solid !important;
     border-radius: 20px;
 
+}
+.doces {
+    border-radius: 100%;
+}
+.doces:hover {
+    transform: scale(1);
 }
