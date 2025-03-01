@@ -6,7 +6,7 @@ body {
 }
 
 /*navbar*/
-.navbar {
+/* .navbar {
     position: fixed;
     z-index: 1;
     background-color: #EB8D96;
@@ -44,31 +44,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
-}
-
-/*search*/
-/* .search-input {
-    position: absolute;
-    left: 2px;
-}
-
-.search {
-    padding: 10px;
-    margin: 40px;
-    border-radius: 20px;
-    border: 2px #682f10 solid !important;
-    background: #e7dbd4;
-
-} */
-/* 
-::-webkit-input-placeholder {
-    color: rgb(99, 40, 6);
-} */
-
-/* .search-img {
-    top: 18px;
-    position: relative;
-    left: 30px;
 } */
 
 .img-banner {
@@ -78,7 +53,7 @@ body {
 
 /*Slider*/
 
-/* .slider-container {
+.slider-container {
     position: absolute;
     max-width: 600px;
     margin: 50px auto;
@@ -100,7 +75,7 @@ body {
 .slide img {
     width: 100%;
     height: auto;
-} */
+}
 
 /*Sobre nós*/
 .sobretitle {
