@@ -119,9 +119,12 @@ body {
 }
 
 .sobre {
+    top: 30px;
+    position: relative;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
     column-gap: 30px;
+    font-size: 18px;
 }
 
 .divsobre {
@@ -153,6 +156,7 @@ body {
     position: relative;
     top: 570px;
 }
+
 .local {
     font-family: "Atma", serif;
     color: #221107;
@@ -171,7 +175,14 @@ body {
     position: relative;
 }
 
+.endereco {
+    font-size: 25px;
+    color: #221107 !important;
+    font-family: "Atma", serif;
+    top: 4px;
+}
+
 iframe {
-    border: #5a2100 solid 3px;
+    border:#5a2100 3px solid !important;
     border-radius: 20px;
 }
