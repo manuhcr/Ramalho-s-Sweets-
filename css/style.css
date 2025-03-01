@@ -148,10 +148,26 @@ body {
 }
 
 .doces {
-    border-radius: 100%;
+    border-radius: 58%;
     width: 130px;
 }
 
 .doces:hover {
     transform: scale(1);
+}
+
+.divcardapio {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    top: 680px;
+}
+
+.cardapiotitle {
+    margin-top: 40px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #704932;
 }
