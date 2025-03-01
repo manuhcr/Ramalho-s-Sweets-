@@ -170,4 +170,9 @@ body {
     margin-top: 40px;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #704932;
+    text-align: center;
+}
+
+.d-flex li {
+    list-style: none;
 }
