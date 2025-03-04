@@ -168,7 +168,7 @@ body {
 
 .doces:hover {
     opacity: 100%;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.8s;
 }
 
