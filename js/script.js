@@ -67,6 +67,7 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
         `;
     } else if (tipo == "colddesserts") {
         conteudo = `
+         <h1 style = "text-align: center;"> Sobremesas Geladas </h1>
          <ul>
             <li><img  src = "imagens/sorvete.png" alt="icecream"/> Pavê de chocolate – <strong>  R$ 49,90 (1kg) </strong></li>
             <li><img  src = "imagens/sorvete.png" alt="icecream"/> Mousse de maracujá – <strong> R$ 7,90 (taça)</strong></li>
@@ -79,24 +80,26 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
         `
     } else if (tipo == "chocoandbrownie") {
         conteudo = ` 
+         <h1 style = "text-align: center;"> Chocolates e Brownies </h1>
          <ul>
-            <li> Brownie de chocolate – <strong>  R$ 7,90 (unidade) </strong></li>
-            <li> Brownie recheado (Nutella, doce de leite, Oreo) – <strong> R$ 9,90 (unidade)</strong></li>
-            <li> Cookie recheado com chocolate – <strong> R$ 6,50 (unidade)</strong></li>
-            <li> Trufas de chocolate (tradicional, ninho, nutella, sensação, etc) – <strong>R$ 4,90 (unidade)</strong></li>
-            <li> Barrinha de chocolate caseira – <strong>R$ 7,50 (unidade)</strong></li>  
+            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Brownie de chocolate – <strong>  R$ 7,90 (unidade) </strong></li>
+            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Brownie recheado (Nutella, doce de leite, Oreo) – <strong> R$ 9,90 (unidade)</strong></li>
+            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Cookie recheado com chocolate – <strong> R$ 6,50 (unidade)</strong></li>
+            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Trufas de chocolate (tradicional, ninho, nutella, sensação, etc) – <strong>R$ 4,90 (unidade)</strong></li>
+            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Barrinha de chocolate caseira – <strong>R$ 7,50 (unidade)</strong></li>  
          </ul>
 
 
        `
     } else {
         conteudo = `
+         <h1 style = "text-align: center;"> Doces Especiais </h1>
          <ul>
-            <li> Macarons coloridos – <strong> R$ 5,50 (unidade) </strong></li>
-            <li> Churros – <strong> R$ 7,90 (unidade) </strong> e com coberturas e acompanhamentos como: nuttela ou doce de leite e ninho, nuttela ou doce de leite e morango, nutella ou doce de leite e paçoca, etc  <strong> (R$ 0,50) </strong></li>
-            <li> Rabanada açucarada – <strong> R$ 6,50 (unidade) </strong></li>
-            <li> Waffle com calda e frutas – <strong> R$ 14,90 (prato)</strong> com calda de chocolate ou mel e frutas frescas como: morangos, bananas, uvas e kiwis.</li>
-            <li> Donuts  – <strong>  R$ 8,90 (unidade) </strong> com cobertura de glacê de açúcar e opções de recheio, como doce de leite, nutella ou creme de baunilha.</li>
+            <li> <img  src = "imagens/doces.png" alt="sweets"/> Macarons coloridos – <strong> R$ 5,50 (unidade) </strong></li>
+            <li> <img  src = "imagens/doces.png" alt="sweets"/> Churros – <strong> R$ 7,90 (unidade) </strong> e com coberturas e acompanhamentos como: nuttela ou doce de leite e ninho, nuttela ou doce de leite e morango, nutella ou doce de leite e paçoca, etc  <strong> (R$ 0,50) </strong></li>
+            <li> <img  src = "imagens/doces.png" alt="sweets"/> Rabanada açucarada – <strong> R$ 6,50 (unidade) </strong></li>
+            <li> <img  src = "imagens/doces.png" alt="sweets"/> Waffle com calda e frutas – <strong> R$ 14,90 (prato)</strong> com calda de chocolate ou mel e frutas frescas como: morangos, bananas, uvas e kiwis.</li>
+            <li> <img  src = "imagens/doces.png" alt="sweets"/> Donuts  – <strong>  R$ 8,90 (unidade) </strong> com cobertura de glacê de açúcar e opções de recheio, como doce de leite, nutella ou creme de baunilha.</li>
         </ul>
         `
     }
