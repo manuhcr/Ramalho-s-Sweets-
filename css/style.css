@@ -96,7 +96,7 @@ body {
 }
 
 .sobre {
-    margin-top: 40px;
+    margin-top: 60px;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5a2100;
 }
@@ -278,3 +278,23 @@ ul li {
 }
 
 /* fim contato */
+
+/* video */
+
+iframe {
+    border-radius: 22px;
+    -webkit-box-shadow: -2px 0px 17px 14px rgba(117, 78, 0, 0.18);
+    -moz-box-shadow: -2px 0px 17px 14px rgba(117, 78, 0, 0.18);
+    box-shadow: -2px 0px 17px 14px rgba(117, 78, 0, 0.18);
+}
+
+.div_video {
+    display: flex;
+    flex-direction: column;
+}
+
+.div_iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
