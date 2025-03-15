@@ -39,39 +39,41 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
 
     if (tipo == "bolos") {
         conteudo = `
+        <h1 style = "text-align: center;"> Bolos e tortas </h1>
             <ul>
-                <li>Bolo de chocolate com cobertura cremosa – <strong>R$ 49,90 (1kg)</strong></li>
-                <li>Bolo de morango com chantilly – <strong>R$ 54,90 (1kg)</strong></li>
-                <li>Bolo de cenoura com calda de chocolate – <strong>R$ 44,90 (1kg)</strong></li>
-                <li>Bolo Red Velvet com cream cheese – <strong>R$ 64,90 (1kg)</strong></li>
-                <li>Cheesecake de frutas vermelhas – <strong>R$ 69,90 (1kg)</strong></li>
-                <li>Torta holandesa – <strong>R$ 59,90 (1kg)</strong></li>
-                <li>Torta de limão com merengue – <strong>R$ 49,90 (1kg)</strong></li>
-                <li>Torta de maçã caramelizada – <strong>R$ 55,90 (1kg)</strong></li>
+                <li> <img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de chocolate com cobertura cremosa – <strong>R$ 49,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de morango com chantilly – <strong>R$ 54,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de cenoura com calda de chocolate – <strong>R$ 44,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo Red Velvet com cream cheese – <strong>R$ 64,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Cheesecake de frutas vermelhas – <strong>R$ 69,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Torta holandesa – <strong>R$ 59,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Torta de limão com merengue – <strong>R$ 49,90 (1kg)</strong></li>
+                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Torta de maçã caramelizada – <strong>R$ 55,90 (1kg)</strong></li>
             </ul>
         `;
     } else if (tipo == "doces") {
         conteudo = `
+         <h1 style = "text-align: center;"> Doces Brasileiros </h1>
             <ul>
-                <li>Brigadeiro gourmet (tradicional, branco, pistache, etc) – <strong>R$ 3,50 (unidade)</strong></li>
-                <li>Beijinho de coco – <strong>R$ 3,00 (unidade)</strong></li>
-                <li>Cajuzinho – <strong>R$ 3,00 (unidade)</strong></li>
-                <li>Bicho de pé – <strong>R$ 3,50 (unidade)</strong></li>
-                <li>Palha italiana – <strong>R$ 5,00 (unidade)</strong></li>
-                <li>Quindim <strong>– R$ 6,50 (unidade)</strong></li>
-                <li>Cocada (branca, queimada, com leite condensado)  <strong> – R$ 4,50 (unidade)</strong></li>
-                <li>Canjica doce <strong>– R$ 9,90 (250g)</strong></li>
+                <li> <img  src = "imagens/brigadeiro.png" alt="candy"/> Brigadeiro gourmet (tradicional, branco, pistache, etc) – <strong>R$ 3,50 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Beijinho de coco – <strong>R$ 3,00 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Cajuzinho – <strong>R$ 3,00 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Bicho de pé – <strong>R$ 3,50 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Palha italiana – <strong>R$ 5,00 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Quindim <strong>– R$ 6,50 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Cocada (branca, queimada, com leite condensado)  <strong> – R$ 4,50 (unidade)</strong></li>
+                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Canjica doce <strong>– R$ 9,90 (250g)</strong></li>
             </ul>
         `;
     } else if (tipo == "colddesserts") {
         conteudo = `
          <ul>
-            <li> Pavê de chocolate – <strong>  R$ 49,90 (1kg) </strong></li>
-            <li>Mousse de maracujá – <strong> R$ 7,90 (taça)</strong></li>
-            <li>Mousse de chocolate com raspas – <strong> R$ 8,90 (taça)</strong></li>
-            <li>Torta gelada de morango – <strong>R$ 54,90 (1kg)</strong></li>
-            <li>Sorvete artesanal de diferentes sabores – <strong>R$ 12,90 (pote 500ml)</strong></li>
-            <li>Geladinho gourmet (morango com ninho, ninho com chocolate, abacaxi com coco, etc)  – <strong>R$ 5,00 (unidade)</strong></li>    
+            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Pavê de chocolate – <strong>  R$ 49,90 (1kg) </strong></li>
+            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Mousse de maracujá – <strong> R$ 7,90 (taça)</strong></li>
+            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Mousse de chocolate com raspas – <strong> R$ 8,90 (taça)</strong></li>
+            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Torta gelada de morango – <strong>R$ 54,90 (1kg)</strong></li>
+            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Sorvete artesanal de diferentes sabores – <strong>R$ 12,90 (pote 500ml)</strong></li>
+            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Geladinho gourmet (morango com ninho, ninho com chocolate, abacaxi com coco, etc)  – <strong>R$ 5,00 (unidade)</strong></li>    
          </ul>
 
         `
