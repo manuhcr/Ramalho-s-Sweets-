@@ -112,3 +112,17 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
 function fecharModal() {
     document.getElementById("modalcardapio").style.display = "none"; // Fecha o modal através do estilo display: none; (esse estilo faz o modal sumir)
 }
+// Mostrar o botão ao rolar
+window.onscroll = function () {
+    const btn = document.getElementById("btnTopo");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+// Voltar ao topo suavemente
+document.getElementById("btnTopo").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
