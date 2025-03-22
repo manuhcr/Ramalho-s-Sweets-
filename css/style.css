@@ -298,3 +298,14 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+.footer {
+    background-position: 0px 30%;
+    background-size: cover;
+    background-color: #ffdddd;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    margin-top: 20px;
+}
+
