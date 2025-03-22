@@ -322,7 +322,9 @@ iframe {
     display: block;
     margin: 0 !important;
 }
-
+.footer-wave path {
+  filter: drop-shadow(0 -2px 4px rgba(0, 0, 0, 0.3));
+}
 .logofooter {
     position: relative;
     top: 20px;
