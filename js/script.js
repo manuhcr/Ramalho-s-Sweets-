@@ -112,17 +112,29 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
 function fecharModal() {
     document.getElementById("modalcardapio").style.display = "none"; // Fecha o modal através do estilo display: none; (esse estilo faz o modal sumir)
 }
-// Mostrar o botão ao rolar
+
 window.onscroll = function () {
-    const btn = document.getElementById("btnTopo");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
+    const navbar = document.getElementById("navbar");
+
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        navbar.style.backgroundColor = "#A86B49";
+        navbar.style.transition = "all 0.2s ease-in"
+    } else if (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200) {
+        navbar.style.backgroundColor = "#EB8D96";
     }
 };
+const links = document.querySelectorAll(".links");
 
-// Voltar ao topo suavemente
-document.getElementById("btnTopo").onclick = function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+links.forEach(link => {
+    link.onmouseover = () => {
+        link.style.color = "#f3cfcf"; // rosa
+        link.style.textShadow = "1px 1px 3px rgb(39, 16, 0)";
+        link.style.transition = "all 0.2s ease-in"
+    };
+
+    link.onmouseout = () => {
+        link.style.color = "#ffffff"; // cor padrão
+        link.style.textShadow = "none";
+    };
+});
+
