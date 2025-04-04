@@ -432,3 +432,41 @@ iframe {
 }
 
 /* fim footer */
+
+/*página melhores doces */
+.navbarbestcandy {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    z-index: 1000;
+}
+.bestcandytitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.bestcandysubtitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+.bestone21 {
+    text-align: center;
+    font-family: "Atma", serif;
+    font-weight: 400;
+    color: #221107;
+}
+
+.divcard {
+    margin: 80px;
+    border: 1px solid #221107;
+    background-color: #eed9d9;
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+}
