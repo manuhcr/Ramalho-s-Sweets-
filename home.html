@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Pacifico&display=swap"
         rel="stylesheet">
     <title>Ramalho`s Sweets</title>
-    
+    <script>
+        mes = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+    </script>
 </head>
 
 <body>
@@ -46,9 +49,19 @@
                 <div class="slide">
                     <img src="./imagens/3.jpg" alt="" class="img-banner">
                 </div>
+
             </div>
+
         </section>
         <!--sobre nós-->
+        <section>
+            <p style="text-align: center;">
+                <script>
+                    document.write(dia[data.getDay()] + "," + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+                </script>
+            </p>
+
+        </section>
         <section>
             <h2 class="sobretitle">Sobre a doceria</h2>
             <div class="divsobre">
