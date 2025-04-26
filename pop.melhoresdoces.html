@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Melhores Doces - Ramalho`s Sweets</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 id="nome-doce">título</h1>
+            <img id="img-doce" src="" />
+            <p id="descricao-doce">Descrição:</p>
+
+            <!--Preenchimento das informações-->
+            <script>
+                //Funcao para capturar os parâmetros
+                function getParametros(info) {
+                    const urlParametros = new URLSearchParams(window.location.search);
+                    return urlParametros.get(info);
+                }
+
+                //Preenche as informações na pop
+                document.getElementById('nome-doce').textContent = getParametros("nomeDoce");
+                document.getElementById('img-doce').src = getParametros("imagemDoce");
+                document.getElementById('descricao-doce').textContent = getParametros("descricaoDoce");
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

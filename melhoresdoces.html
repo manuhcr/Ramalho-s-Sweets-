@@ -13,6 +13,14 @@
     <title>Ramalho`s Sweets</title>
     <script>
         alert("Conheça nossos doces mais famosos!")
+        mes = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+
+        // Função para abrir a POP de detalhes sobre o doce ( )
+        function abrirPop(nome, imagem, descricao) {
+            const url = `pop.melhoresdoces.html?nomeDoce=${encodeURIComponent(nome)}&imagemDoce=${encodeURIComponent(imagem)}&descricaoDoce=${encodeURIComponent(descricao)}`;
+            window.open(url, "_blank", 'width=800,height=700');
+        }
     </script>
 </head>
 
@@ -36,6 +44,14 @@
             </div>
         </nav>
     </header>
+    <section>
+        <p style="text-align: center;">
+            <script>
+                document.write(dia[data.getDay()] + "," + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+            </script>
+        </p>
+
+    </section>
     <main>
         <!--sobre nós-->
         <section>
@@ -45,15 +61,12 @@
                     <h3 class="bestcandytitle">Melhor doce de 2021:</h3>
                     <div class="card">
 
-                        <div class="card-content">
+                        <div onclick="abrirPop('Torta Gelada de Morango' , './imagens/melhordoce2021.png' , 'Eleita o melhor doce de 2021 da Ramalho’s Sweets, essa sobremesa se destacou pela sua combinação perfeita de sabores e texturas: uma base leve e macia de pão de ló, uma camada generosa de creme gelado de morango, e por cima, uma cobertura brilhante de calda natural de morangos frescos.')" class="card-content">
                             <img class="imgbestone" width="160" src="./imagens/melhordoce2021.png" alt="">
                             <div>
                                 <h1 class="titlebestone">Torta Gelada de Morango</h1>
                                 <p class="textbestone">
-                                    Eleita o melhor doce de 2021 da Ramalho’s Sweets, essa torta conquistou todos com
-                                    sua
-                                    base leve,
-                                    recheio cremoso de morango gelado e cobertura de frutas frescas.
+                                    Clique na imagem e saiba o porque esse doce foi o queridinho de todos em 2021!
                                 </p>
                             </div>
                         </div>
@@ -71,7 +84,6 @@
                                     Com camadas vermelhas aveludadas e um recheio cremoso de cream cheese, esse clássico
                                     conquistou o título de melhor doce de 2022 na Ramalho’s Sweets. Um equilíbrio
                                     perfeito entre elegância, sabor e textura!
-
 
                                 </p>
                             </div>

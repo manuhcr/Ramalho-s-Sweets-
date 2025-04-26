@@ -467,14 +467,14 @@ iframe {
     font-family: "Atma", serif;
     font-weight: 300;
     color: #221107;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .textbestone {
     font-family: "Atma", serif;
     font-weight: 300;
     color: #221107;
-    font-size: 15px;
+    font-size: 20px !important;
 }
 
 .bestone21 {
