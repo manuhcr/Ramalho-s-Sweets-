@@ -17,8 +17,8 @@
         dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
 
         // Função para abrir a POP de detalhes sobre o doce ( )
-        function abrirPop(nome, imagem, descricao) {
-            const url = `pop.melhoresdoces.html?nomeDoce=${encodeURIComponent(nome)}&imagemDoce=${encodeURIComponent(imagem)}&descricaoDoce=${encodeURIComponent(descricao)}`;
+        function abrirPop(nome, imagem, titulodesc, descricao, tituloDescricaoWin, descricaoWin) {
+            const url = `pop.melhoresdoces.html?nomeDoce=${encodeURIComponent(nome)}&imagemDoce=${encodeURIComponent(imagem)}&tituloDescricaoDoce=${encodeURIComponent(titulodesc)}&descricaoDoce=${encodeURIComponent(descricao)}}&tituloDescricaoWin=${encodeURIComponent(tituloDescricaoWin)}}&descricaoWin=${encodeURIComponent(descricaoWin)}`;
             window.open(url, "_blank", 'width=800,height=700');
         }
     </script>
@@ -57,16 +57,20 @@
         <section>
             <h2 class="bestcandytitle">Ranking: melhores doces classificados de cada ano</h2>
             <div class="cards-container">
+                <script>
+                    slider = ['img/boloredvelvet.jpg', 'img/cheesecakefrutasvermelhas.jpg'];
+                </script>
+
                 <div>
                     <h3 class="bestcandytitle">Melhor doce de 2021:</h3>
                     <div class="card">
-
-                        <div onclick="abrirPop('Torta Gelada de Morango' , './imagens/melhordoce2021.png' , 'Eleita o melhor doce de 2021 da Ramalho’s Sweets, essa sobremesa se destacou pela sua combinação perfeita de sabores e texturas: uma base leve e macia de pão de ló, uma camada generosa de creme gelado de morango, e por cima, uma cobertura brilhante de calda natural de morangos frescos.')" class="card-content">
-                            <img class="imgbestone" width="160" src="./imagens/melhordoce2021.png" alt="">
+                        <div onclick="abrirPop('Torta Gelada de Morango' , slider , 'Critérios Melhor Doce de 2021 - Ramalho`s Sweets:' , '\n  <b>Frescor e Intensidade da Fruta:</b> Avaliação da vivacidade do sabor da fruta principal e da sensação de frescor que ela proporciona. \n \n  <b>Leveza e Delicadeza da Base:</b> Análise da textura da base, buscando leveza e que não sobrecarregue a experiência. \n \n  <b>Equilíbrio entre Doçura e Acidez da Fruta:</b> Consideração da harmonia entre o dulçor adicionado e a acidez natural da fruta. \n \n  <b>Apresentação Refrescante e Cores Naturais:</b> Avaliação da estética que transmita a sensação de frescor e a autenticidade dos ingredientes. \n \n  <b>Qualidade da Fruta Utilizada:</b> Consideração do ponto de maturação, do aroma e do sabor da fruta principal. \n \n  <b>Sensação de Leveza e Revigoramento:</b> Avaliação da capacidade do doce de proporcionar uma sensação refrescante e agradável, especialmente em climas mais quentes.' , 'Por que a Torta Gelada de Morango foi Eleita a Melhor de 2021:' , ' \n  <b>Frescor e Intensidade da Fruta:</b> A Torta Gelada de Morango oferecia uma explosão do sabor vibrante e fresco de morangos maduros, como se tivessem acabado de ser colhidos. \n \n  <b>Leveza e Delicadeza da Base:</b> A base de pão de ló era incrivelmente leve e macia, permitindo que o sabor do morango e a cremosidade do creme fossem os protagonistas. \n \n  <b>Equilíbrio entre Doçura e Acidez da Fruta:</b> A doçura do creme era perfeitamente equilibrada pela acidez natural e refrescante dos morangos, criando um sabor agradável e nada enjoativo. \n \n  <b>Apresentação Refrescante e Cores Naturais:</b> A torta, com seus tons de vermelho vivo dos morangos e o branco do creme, tinha uma aparência naturalmente apetitosa e que transmitia a sensação de frescor. \n \n  <b>Qualidade da Fruta Utilizada:</b> A utilização de morangos frescos, doces e aromáticos era evidente em cada mordida, mostrando a qualidade da matéria-prima. \n \n  <b>Sensação de Leveza e Revigoramento:</b> Sendo uma torta gelada, proporcionava uma sensação refrescante e revigorante, ideal para os dias mais quentes e agradando a um público amplo.')"
+                            class="card-content">
+                            <img class="imgbestone" width="160" src="./imagens/melhordoce2021.jpg" alt="">
                             <div>
                                 <h1 class="titlebestone">Torta Gelada de Morango</h1>
                                 <p class="textbestone">
-                                    Clique na imagem e saiba o porque esse doce foi o queridinho de todos em 2021!
+                                    Clique no card e saiba o porque esse doce foi o queridinho de todos em 2021!
                                 </p>
                             </div>
                         </div>
@@ -76,58 +80,65 @@
                 <div>
                     <h3 class="bestcandytitle">Melhor doce de 2022:</h3>
                     <div class="card">
-                        <div class="card-content">
-                            <img class="imgbestone" width="160" src="./imagens/melhordoce2021.png" alt="">
-                            <div>
-                                <h1 class="titlebestone">Bolo Red Velvet com Cream Cheese</h1>
-                                <p class="textbestone">
-                                    Com camadas vermelhas aveludadas e um recheio cremoso de cream cheese, esse clássico
-                                    conquistou o título de melhor doce de 2022 na Ramalho’s Sweets. Um equilíbrio
-                                    perfeito entre elegância, sabor e textura!
+                        <div
+                            onclick="abrirPop('Bolo Red Velvet com Cream Cheese' , './imagens/boloredvelvet.png' , 'Critérios Melhor Doce de 2022 - Ramalho`s Sweets:' , '\n  <b>Complexidade Aromática:</b> Avaliação da riqueza e da sutileza dos aromas que compõem o doce, desde a massa até a cobertura. \n \n  <b>Harmonia Textural em Camadas:</b> Análise da interação das diferentes texturas presentes em cada camada do doce, buscando um equilíbrio agradável. \n \n  <b>Equilíbrio entre Doçura e Acidez:</b> Consideração da proporção ideal entre o dulçor da massa e a acidez característica do cream cheese. \n \n  <b>Vibrância da Cor e Apelo Visual Sofisticado:</b> Avaliação da intensidade da cor vermelha e da elegância da apresentação geral. \n \n  <b>Qualidade dos Lácteos Utilizados:</b> Consideração da qualidade e do frescor do cream cheese, elemento central da cobertura e do recheio. \n \n  <b>Sensação de Conforto e Familiaridade:</b> Avaliação da capacidade do doce de evocar sensações agradáveis e memórias afetivas.' , 'Por que o Bolo Red Velvet com Cream Cheese foi Eleito o Melhor de 2023:' , ' \n  <b>Complexidade Aromática:</b> O Bolo Red Velvet exalava um aroma sutilmente achocolatado com um toque amanteigado, que se harmonizava com a frescura do cream cheese, criando uma experiência olfativa convidativa. \n \n  <b>Harmonia Textural em Camadas:</b> A maciez da massa contrastava deliciosamente com a cremosidade densa do recheio e da cobertura de cream cheese, proporcionando uma experiência tátil rica e satisfatória. \n \n  <b>Equilíbrio entre Doçura e Acidez:</b> A doçura moderada da massa era perfeitamente equilibrada pela acidez suave e revigorante do cream cheese, evitando qualquer sensação de excesso. \n \n  <b>Vibrância da Cor e Apelo Visual Sofisticado:</b> O vermelho intenso da massa, elegantemente contrastado pelo branco puro do cream cheese, conferia ao bolo uma aparência sofisticada e irresistível. \n \n  <b>Qualidade dos Lácteos Utilizados:</b> O uso de cream cheese fresco e de alta qualidade era evidente na sua textura aveludada e no sabor delicado, elevando a qualidade da sobremesa. \n \n  <b>Sensação de Conforto e Familiaridade:</b> O Bolo Red Velvet é um clássico reconfortante, e a versão da Ramalho`s Sweets trouxe essa familiaridade com uma execução impecável, gerando grande satisfação nos clientes.')">
+                            <div class="card-content">
+                                <img class="imgbestone" width="160" src="./imagens/boloredvelvet.jpg" alt="">
+                                <div>
+                                    <h1 class="titlebestone" style="font-size: 24px;">Bolo Red Velvet com Cream Cheese
+                                    </h1>
+                                    <p class="textbestone">
+                                        Clique no card e saiba o porque esse doce foi o queridinho de todos em 2022!
 
-                                </p>
+                                    </p>
+                                </div>
+
                             </div>
-
                         </div>
+
                     </div>
                 </div>
-
                 <div>
                     <h3 class="bestcandytitle">Melhor doce de 2023:</h3>
                     <div class="card">
-                        <div class="card-content">
-                            <img class="imgbestone" width="160" src="./imagens/melhordoce2021.png" alt="">
+
+                        <div onclick="abrirPop('Cheesecake de Frutas Vermelhas' , './imagens/cheesecakefrutasvermelhas.jpg' , 'Critérios Melhor Doce de 2023 - Ramalho`s Sweets:' , '\n  <b>Explosão de Sabores Frutados:</b> Avaliação da variedade, intensidade e harmonia dos sabores das diferentes frutas vermelhas presentes. \n \n  <b>Cremosidade Sedosa do Recheio:</b> Análise da textura suave, rica e aveludada do creme de queijo, proporcionando uma sensação agradável na boca. \n \n  <b>Contraste Crocante da Base:</b> Consideração da textura da base biscoito, buscando uma crocância que complemente a maciez do recheio e das frutas. \n \n  <b>Cores Vibrantes e Apelo Visual Fresco:</b> Avaliação da apresentação, com as cores vivas das frutas destacando-se sobre o creme claro. \n \n  <b>Qualidade e Frescor das Frutas:</b> Consideração do ponto de maturação, do aroma e do sabor das frutas vermelhas utilizadas na cobertura e, possivelmente, no recheio. \n \n  <b>Equilíbrio entre Doçura e Acidez das Frutas:</b> Avaliação da proporção ideal entre o dulçor do cheesecake e a acidez natural das frutas, criando um sabor equilibrado e refrescante.' , 'Por que o Cheesecake de Frutas Vermelhas foi Eleito o Melhor de 2023:' , ' \n  <b>Explosão de Sabores Frutados:</b> A combinação generosa de morangos doces, framboesas levemente ácidas, mirtilos suaves e talvez algumas notas de groselha proporcionou uma verdadeira explosão de sabores frescos e vibrantes. \n \n  <b>Cremosidade Sedosa do Recheio:</b> O recheio de cream cheese era incrivelmente liso e cremoso, derretendo na boca e criando uma base perfeita para a acidez das frutas. \n \n  <b>Contraste Crocante da Base:</b> A base de biscoito triturado oferecia um contraste crocante satisfatório com a maciez do recheio e a suculência das frutas, adicionando uma dimensão textural interessante. \n \n  <b>Cores Vibrantes e Apelo Visual Fresco:</b> A apresentação colorida e apetitosa, com as frutas vermelhas brilhantes dispostas artisticamente sobre o cheesecake branco, tornava-o visualmente irresistível e transmitia uma sensação de frescor. \n \n  <b>Qualidade e Frescor das Frutas:</b> A utilização de frutas vermelhas frescas, maduras e de alta qualidade era evidente no sabor intenso e no aroma delicioso que emanava da sobremesa. \n \n  <b>Equilíbrio entre Doçura e Acidez das Frutas:</b> A doçura suave do cheesecake era perfeitamente equilibrada pela acidez natural e revigorante das frutas vermelhas, resultando em um sabor final refrescante e delicioso.')"
+                            class="card-content">
+                            <img class="imgbestone" width="160" src="./imagens/cheesecakefrutasvermelhas.jpg" alt="">
                             <div>
-                                <h1 class="titlebestone">Torta Gelada de Morango – A Queridinha de 2021 🍓</h1>
+                                <h1 class="titlebestone">Cheesecake de frutas vermelhas</h1>
                                 <p class="textbestone">
-                                    Eleita o melhor doce de 2021 da Ramalho’s Sweets, essa torta conquistou todos com
-                                    sua
-                                    base leve,
-                                    recheio cremoso de morango gelado e cobertura de frutas frescas.
+                                    Clique no card e saiba o porque esse doce foi o queridinho de todos em 2023!
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
+
                 <div>
                     <h3 class="bestcandytitle">Melhor doce de 2024:</h3>
                     <div class="card">
-                        <div class="card-content">
-                            <img class="imgbestone" width="160" src="./imagens/melhordoce2021.png" alt="">
-                            <div>
-                                <h1 class="titlebestone">Torta Gelada de Morango – A Queridinha de 2021 🍓</h1>
-                                <p class="textbestone">
-                                    Eleita o melhor doce de 2021 da Ramalho’s Sweets, essa torta conquistou todos com
-                                    sua
-                                    base leve,
-                                    recheio cremoso de morango gelado e cobertura de frutas frescas.
-                                </p>
-                            </div>
+                        <div
+                            onclick="abrirPop('Torta de Maçã Caramelizada' , './imagens/tortademacacaramelizada.jpg' , 'Critérios Melhor Doce de 2024 - Ramalho`s Sweets:' , '\n  <b>Profundidade do Sabor Caramelizado:</b> Avaliação da riqueza, da complexidade e das notas amanteigadas do caramelo nas maçãs. \n \n  <b>Textura da Maçã Assada:</b> Análise da maciez das maçãs após o cozimento, buscando um equilíbrio entre firmeza e delicadeza. \n \n  <b>Qualidade e Crocância da Massa:</b> Consideração da textura da massa, que deve ser crocante e saborosa, complementando o recheio. \n \n  <b>Equilíbrio entre Doçura e Acidez da Maçã:</b> Avaliação da harmonia entre o dulçor do caramelo e a acidez natural das maçãs. \n \n  <b>Aroma Envolvente de Maçã e Caramelo:</b> Consideração do perfume que a torta exala, convidando à degustação. \n \n  <b>Sensação de Conforto e Aconchego:</b> Avaliação da capacidade do doce de evocar sentimentos de familiaridade e satisfação.' , 'Por que a Torta de Maçã Caramelizada foi Eleita a Melhor de 2024:' , ' \n  <b>Profundidade do Sabor Caramelizado:</b> As fatias de maçã caramelizaram lentamente, desenvolvendo uma profundidade de sabor rica e amanteigada que era simplesmente irresistível. \n \n  <b>Textura da Maçã Assada:</b> As maçãs estavam perfeitamente assadas, mantendo uma leve resistência ao morder, mas derretendo suavemente na boca. \n \n  <b>Qualidade e Crocância da Massa:</b> A massa folhada era incrivelmente crocante e dourada, proporcionando uma base saborosa que realçava a doçura do recheio. \n \n  <b>Equilíbrio entre Doçura e Acidez da Maçã:</b> A doçura rica do caramelo era maravilhosamente equilibrada pela acidez natural e levemente picante das maçãs, evitando que a torta fosse excessivamente doce. \n \n  <b>Aroma Envolvente de Maçã e Caramelo:</b> O aroma quente e convidativo de maçãs assadas com caramelo preenchia o ambiente, tornando a experiência ainda mais prazerosa. \n \n  <b>Sensação de Conforto e Aconchego:</b> A Torta de Maçã Caramelizada é um clássico reconfortante, e a versão da Ramalho`s Sweets trouxe essa sensação de aconchego com uma execução primorosa, conquistando o paladar dos clientes.')">
+                            <div class="card-content">
+                                <img class="imgbestone" width="160"
+                                    src="./imagens/tortademacacaramelizada.jpg" alt="">
+                                <div>
+                                    <h1 class="titlebestone" style="font-size: 24px;">Torta de maçã caramelizada
+                                    </h1>
+                                    <p class="textbestone">
+                                        Clique no card e saiba o porque esse doce foi o queridinho de todos em 2024!
 
+                                    </p>
+                                </div>
+
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
+
         </section>
         <!---mapa-->
 
