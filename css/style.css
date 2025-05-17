@@ -71,7 +71,6 @@ body {
     z-index: -1;
 }
 
-
 .slide {
     min-width: 100%;
     box-sizing: border-box;
@@ -560,4 +559,9 @@ iframe {
     align-items: center;
     justify-items: center;
     border-radius: 10px;
+}
+
+/*Estilização do Slider da POP de produtos*/
+.sliderPop img{
+    width: 50%;
 }

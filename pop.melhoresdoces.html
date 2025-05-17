@@ -16,7 +16,7 @@
     <main>
         <div class="container">
             <h1 class="nome" id="nome-doce">título</h1>
-            <div class="slider">
+            <div class="sliderPop">
                 <button id="prevBtn">&#10094;</button>
                 <img id="slider-img" src="" alt="">
                 <button id="nextBtn">&#10095;</button>
@@ -46,7 +46,7 @@
 
                 
                 /*Controle do Slider*/
-                const imagens = getParametro("imagem") ? getParametro("imagem").split(',') : [];
+                const imagens = getParametros("imagemDoce") ? getParametros("imagemDoce").split(',') : [];
                 let index = 0;
                 const sliderImg = document.getElementById("slider-img");
 
