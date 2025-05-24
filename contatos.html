@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./imagens/logo ramalho´s sweets.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Ramalho`s Sweets</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbarbestcandy">
+            <div class="link">
+                <a id="link" href="./home.html" class="links">Home</a>
+            </div>
+            <div class="link">
+                <a id="link" href="./sobrenos.html" class="links">Nossa história</a>
+            </div>
+            <div class="logomarca">
+                <img class="logo" width="120" src="./imagens/logo ramalho´s sweets.png">
+            </div>
+            <div class="link">
+                <a id="link" href="./contatos.html" class="links">Contato</a>
+            </div>
+            <div class="link">
+                <a id="link" href="./melhoresdoces.html" class="links">Melhores doces</a>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <br><br>
+        <h1 style="color: #A86B49; text-align: center;">
+            Quer saber alguma informação ou fazer algum comentário? Fale com a gente!
+        </h1>
+        <form id="frmContato">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label> Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                <label>E-mail</label>
+                <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+
+                <label>Telefone</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                <label>Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <label>Como prefere o nosso contato?
+                    <input type="radio" value="radio-mail" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                </label>
+
+                <br>
+                <label>Qual o motivo do seu contato?
+                    <select>
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+                    </select>
+                </label>
+                <br>
+            </fieldset>
+            <div class="div">
+                <label><input type="checkbox" class="chk check"> Gostaria de receber nossas novidades por
+                    e-mail?</label>
+
+                <input type="submit" id="enviar" value="Enviar" class="enviar">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

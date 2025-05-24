@@ -562,6 +562,93 @@ iframe {
 }
 
 /*Estilização do Slider da POP de produtos*/
-.sliderPop img{
+.sliderPop img {
     width: 50%;
+    border-radius: 8px;
+}
+
+.sliderPop {
+    justify-content: center;
+    display: flex;
+}
+
+#prevBtn {
+    width: 6% !important;
+    height: 25px !important;
+    margin-top: 190px;
+    background-color: #EB8D96;
+    border: none;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+#nextBtn {
+    width: 6% !important;
+    height: 25px !important;
+    margin-top: 190px;
+    background-color: #EB8D96;
+    border: none;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+/*Formulário*/
+form {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+fieldset {
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+
+.check {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 20%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: #5f412e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+}
+
+.enviar:hover {
+    background: #cf6f6f;
+    transform: scale(1.2);
+}
+
+/*Div do retorno do formulário*/
+.divRetorno {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.divRetorno p {
+    font-size: 24px;
 }
