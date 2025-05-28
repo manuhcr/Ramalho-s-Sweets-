@@ -3,6 +3,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     color: #ffdede;
+    font-family: "Atma", serif;
     background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
 }
 
@@ -304,6 +305,12 @@ ul li {
 /* fim contato */
 
 /* video */
+.videotitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: 100px;
+}
 
 iframe {
     border-radius: 22px;
@@ -315,6 +322,7 @@ iframe {
 .div_video {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .div_iframe {
@@ -419,12 +427,7 @@ iframe {
     transform: scale(1.1);
 }
 
-.videotitle {
-    font-family: "Atma", serif;
-    color: #221107;
-    text-align: center;
-    margin-top: 100px;
-}
+
 
 .icon {
     position: relative;
@@ -595,23 +598,33 @@ iframe {
 }
 
 /*Formulário*/
+.divContato {
+    display: flex;
+    justify-content: center;
+
+}
+
 form {
-    margin-top: 20px;
-    margin-left: 20%;
     margin-bottom: 0;
+    background-color: #eb8d96b6;
+    border-radius: 20px;
+    padding: 50px 0px 40px 40px;
+    border: 2px solid #704932 !important;
 }
 
 form label,
 form legend {
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;
+    color: #ffffff;
 }
 
-fieldset {
-    width: 75%;
-    padding-left: 5%;
-    margin-bottom: 2%;
+form legend {
+    text-align: center;
+    margin-left: -30px;
+    margin-bottom: 30px;
+    color: #503824;
+    font-weight: 600;
 }
 
 .input-padrao {
@@ -619,15 +632,27 @@ fieldset {
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 85%;
+    border: none;
+    background-color: #ffeded;
+    border-radius: 8px;
 }
+
 
 .check {
     margin: 20px 0;
 }
 
+.select {
+    background-color: #ffdddd !important;
+    border: none;
+    border-radius: 6px;
+}
+
+
 .enviar {
     width: 20%;
     padding: 15px 0;
+    justify-self: center;
     margin-bottom: 20px;
     background: #5f412e;
     color: white;
@@ -636,8 +661,9 @@ fieldset {
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
-    justify-content: center;
     display: flex;
+    margin-top: 10px;
+    margin-left: -40px;
 }
 
 .enviar:hover {
@@ -647,10 +673,18 @@ fieldset {
 
 /*Div do retorno do formulário*/
 .divRetorno {
-    display: none;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    background-color: #ffdddd;
+    border-radius: 10px;
+    border: 1px solid #503824;
+    margin-top: 20px;
+    width: 80%;
+    justify-self: center;
+    display: flex;
 }
 
 .divRetorno p {
     font-size: 24px;
+    padding: 30px;
+    color: #704932;
 }

@@ -138,3 +138,33 @@ links.forEach(link => {
     };
 });
 
+//form contato 
+document.getElementById('frmContato').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita o recarregamento da página
+
+    const nomeSobrenome = document.getElementById('nomesobrenome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const receberEmail = document.getElementById('receberEmail').checked;
+
+    let mensagemFinal = `Olá, ${nomeSobrenome}! Agradecemos o seu contato.`;
+
+    const contatoPreferido = document.querySelector('input[name="Contato"]:checked');
+    if (contatoPreferido) {
+        const tipoContato = contatoPreferido.value;
+        if (tipoContato === 'radio-mail') {
+            mensagemFinal += ` Entraremos em contato com você via e-mail no endereço ${email}.`;
+        } else if (tipoContato === 'radio-telefone') {
+            mensagemFinal += ` Entraremos em contato com você via telefone no número ${telefone}.`;
+        } else if (tipoContato === 'radio-whatsapp') {
+            mensagemFinal += ` Entraremos em contato com você via WhatsApp no número ${telefone}.`;
+        }
+    }
+    if (receberEmail && (!contatoPreferido || contatoPreferido.value !== 'radio-mail')) {
+        mensagemFinal += ` Você também receberá nossas novidades por e-mail no endereço **${email}**.`;
+    }
+    const divRetorno = document.getElementById('divRetorno');
+    const mensagemRetorno = document.getElementById('mensagemRetorno');
+    mensagemRetorno.innerHTML = mensagemFinal;
+    divRetorno.style.display = 'block'; // Mostra a div de retorno
+});
