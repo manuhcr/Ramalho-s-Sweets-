@@ -135,14 +135,14 @@ body {
     }
 }
 
-/* fim sobre */
 
 /* Endereço */
 .localtitle {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
-    top: 570px;
+    position: relative;
+    top: 140px;
 }
 
 .local {
@@ -157,8 +157,9 @@ body {
     align-content: center;
     flex-wrap: wrap;
     display: flex;
+    position: relative;
     flex-direction: column;
-    top: 680px;
+    top: 150px;
 }
 
 .endereco {
@@ -207,7 +208,7 @@ body {
 }
 
 .cardapiotitle {
-    margin-top: 40px;
+    margin-top: 200px;
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
@@ -422,6 +423,7 @@ iframe {
     font-family: "Atma", serif;
     color: #221107;
     text-align: center;
+    margin-top: 100px;
 }
 
 .icon {
