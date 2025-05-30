@@ -36,51 +36,107 @@
     <div>
         <br><br>
         <h1 style="color: #A86B49; text-align: center;">
-            Quer saber alguma informação ou fazer algum comentário? Fale com a gente!
+            Quer saber alguma informação ou fazer algum comentário? <br> Fale com a gente!
         </h1>
-        <form id="frmContato">
-            <fieldset>
+        <div class="divContato">
+            <form id="frmContato">
                 <legend>Dados Pessoais</legend>
-                <label> Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+                <label for="nomesobrenome"> Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-                <label>E-mail</label>
-                <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com">
 
-                <label>Telefone</label>
-                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
 
-                <label>Mensagem</label>
+                <label for="mensagem">Mensagem</label>
                 <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
                 <label>Como prefere o nosso contato?
-                    <input type="radio" value="radio-mail" name="Contato"> E-mail
-                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
-                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                    <input class="radio" type="radio" value="radio-mail" name="Contato" id="contatoEmail"> E-mail
+                    <input class="radio" type="radio" value="radio-telefone" name="Contato" id="contatoTelefone">
+                    Telefone
+                    <input class="radio" type="radio" value="radio-whatsapp" name="Contato" id="contatoWhatsapp">
+                    Whatsapp
                 </label>
 
                 <br>
-                <label>Qual o motivo do seu contato?
-                    <select>
-                        <option>Selecione</option>
-                        <option>Dúvida</option>
-                        <option>Sugestão</option>
-                        <option>Elogio</option>
-                        <option>Reclamação</option>
+                <label for="motivoContato">Qual o motivo do seu contato?
+                    <select class="select" id="motivoContato">
+                        <option value="0">Selecione</option>
+                        <option value="1">Dúvida</option>
+                        <option value="2">Sugestão</option>
+                        <option value="3">Elogio</option>
+                        <option value="4">Reclamação</option>
                     </select>
                 </label>
                 <br>
-            </fieldset>
-            <div class="div">
-                <label><input type="checkbox" class="chk check"> Gostaria de receber nossas novidades por
-                    e-mail?</label>
+                <div class="div">
+                    <label>
+                        <input type="checkbox" id="receberEmail" class="chk check"> Gostaria de receber nossas novidades
+                        por e-mail?
+                    </label>
+                    <input type="submit" id="enviar" value="Enviar" class="enviar">
+                </div>
+            </form>
+        </div>
+        <h1 style="color: rgb(134, 102, 71); text-align: center;">Resposta:</h1>
+        <div class="divRetorno" id="divRetorno">
 
-                <input type="submit" id="enviar" value="Enviar" class="enviar">
+            <p id="mensagemRetorno"></p>
+        </div>
+    </div>
+    <section>
+        <footer class="footer">
+
+            <div class="footer-wave-container">
+                <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    preserveAspectRatio="none">
+                    <path fill="#673f2f" fill-opacity="1" d="M0,256
+                            C60,224,120,160,180,160
+                            C240,160,300,224,360,208
+                            C420,192,480,96,540,112
+                            C600,128,660,224,720,208
+                            C780,192,840,96,900,112
+                            C960,128,1020,224,1080,208
+                            C1140,192,1200,96,1260,112
+                            C1320,128,1380,224,1440,208
+                            L1440,320L0,320Z">
+                    </path>
+                </svg>
+
             </div>
 
 
-        </form>
-    </div>
+            <div class="conteudo">
+                <p class="contatofooter">Quer encomendar?</p>
+                <p class="contatofooter"> Rua dos Doces, 123 - Cidade Açucarada</p>
+                <p class="contatofooter"> Quer mandar um feedback?</p>
+                <p class="contatofooter"> contato@ramalhossweets.com</p>
+
+            </div>
+            <div class="social-icons">
+                <div class="logomarcafooter">
+                    <img class="logofooter" width="100" src="./imagens/logo ramalho´s sweets.png"
+                        alt="Logo Ramalho's Sweets">
+                </div>
+                <a href="https://instagram.com/ramalhossweets" target="_blank"><img class="icon"
+                        src="./imagens/instagram.png" alt="" srcset=""> Instagram</a>
+                <a href="https://facebook.com/ramalhossweets" target="_blank"><img class="icon"
+                        src="./imagens/facebook (1).png" alt="" srcset=""> Facebook</a>
+                <a href="https://wa.me/5511987654321" target="_blank"><img class="icon" src="./imagens/whatsapp (1).png"
+                        alt="" srcset=""> WhatsApp</a>
+            </div>
+        </footer>
+
+
+
+
+
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
