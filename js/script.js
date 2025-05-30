@@ -1,35 +1,36 @@
 // script.js
-let index = 0;  // Índice do slide atual
-const slides = document.querySelectorAll('.slide');  // Seleciona todos os slides
-const totalSlides = slides.length;  // Conta o total de slides
+let indice = 0; // Índice do slide atual
+const slider = document.querySelectorAll('.slide'); // Seleciona todos os slides
+const totalSlides = slider.length; // Conta o total de slides (indice 0 , 1 e 2)
 
 // Função para mover o slide de scordo com o parâmetro step
-function moveSlide(step) {
-    index += step;  // Atualiza o índice com o valor de "step" (1 para avançar, -1 para voltar)
+function moverSlide(passo) {
+    indice += passo;  // Atualiza o índice com o valor de "passo" (1 para avançar, -1 para voltar)
 
-    if (index >= totalSlides) // Se o indice for maior ou igual ao numero total de slides
+    if (indice >= totalSlides) // Se o indice for maior ou igual ao numero total de slides
     {
-        index = 0;  // Avança para o primeiro slide
-    } else if (index < 0) // Se o indice for menor q 0, ou seja, se estiver no primeiro slide
+        indice = 0;  // Volta para o primeiro slide
+    } else if (indice < 0) // Se o indice for menor q 0, ou seja, se estiver no primeiro slide
     {
-        index = totalSlides - 1;  // Volta para o último slide
+        indice = totalSlides - 1;  //Avança para o último slide
     }
 
-    // Move a posição da .slider para mostrar o slide correto
-    document.querySelector('.slider').style.transform = `translateX(-${index * 100}%)`;
+    // Move a posição da .slider para mostrar o slide correto (0% , -100% ou -200% (índice 0, 1 e 2))
+    document.querySelector('.slider').style.transform = `translateX(-${indice * 100}%)`;
+
 }
 
 // Função para avançar automaticamente
 function autoMove() {
-    moveSlide(1);  // Avança um slide
+    moverSlide(1);  // Avança um slide
 }
 
 // Configurar o intervalo automático para mudar de slide a cada 3 segundos
-setInterval(autoMove, 3000);
+setInterval(autoMove, 4000);
 
 // Garantir que o primeiro slide seja exibido ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
-    moveSlide(0);  // Exibe o primeiro slide
+    moverSlide(0);  // Exibe o primeiro slide
 });
 
 
@@ -144,24 +145,47 @@ document.getElementById('frmContato').addEventListener('submit', function (event
 
     const nomeSobrenome = document.getElementById('nomesobrenome').value;
     const email = document.getElementById('email').value;
-    const telefone = document.getElementById('telefone').value;
     const receberEmail = document.getElementById('receberEmail').checked;
 
     let mensagemFinal = `Olá, ${nomeSobrenome}! Agradecemos o seu contato.`;
 
+    const motivoContatoSelecionado = document.getElementById('motivoContato'); // Pega o SELECT
     const contatoPreferido = document.querySelector('input[name="Contato"]:checked');
+    let formaDeContato = ''; // para armazenar a mensagem
     if (contatoPreferido) {
         const tipoContato = contatoPreferido.value;
+
         if (tipoContato === 'radio-mail') {
-            mensagemFinal += ` Entraremos em contato com você via e-mail no endereço ${email}.`;
+
+            formaDeContato = `pelo seu email`;
+
         } else if (tipoContato === 'radio-telefone') {
-            mensagemFinal += ` Entraremos em contato com você via telefone no número ${telefone}.`;
+
+            formaDeContato = `pelo seu telefone`;
+
         } else if (tipoContato === 'radio-whatsapp') {
-            mensagemFinal += ` Entraremos em contato com você via WhatsApp no número ${telefone}.`;
+
+            formaDeContato = `pelo seu WhatsApp`;
+        }
+
+    }
+    const motivo = motivoContatoSelecionado.value;
+    if (motivoContatoSelecionado) {
+
+        if (motivo === "0") {
+            mensagemFinal += ` Você não especificou o motivo da sua mensagem. Fale com a gente ${formaDeContato}.`;
+        } else if (motivo === "1") {
+            mensagemFinal += ` Qual a sua dúvida? Fale para a gente ${formaDeContato}. `;
+        } else if (motivo === "2") {
+            mensagemFinal += ` Qual a sua sugestão? Conta para a gente ${formaDeContato}. `;
+        } else if (motivo === "3") {
+            mensagemFinal += `Obrigada pelo elogio! Ficamos felizes que você gostou dos nossos serviços`;
+        } else {
+            mensagemFinal += `Poxa! Sinto muito que você não gostou dos nossos serviços...Sua opinião é muito importante para nós e gostaríamos de saber mais detalhes para corrigir qualquer falha.`
         }
     }
-    if (receberEmail && (!contatoPreferido || contatoPreferido.value !== 'radio-mail')) {
-        mensagemFinal += ` Você também receberá nossas novidades por e-mail no endereço **${email}**.`;
+    if (receberEmail && (!contatoPreferido || contatoPreferido.value !== 'radio-mail') && (motivo === "0" || motivo === "1" || motivo === "2" || motivo === "3")) {
+        mensagemFinal += ` Você receberá nossas novidades no seu e-mail ${email}.`;
     }
     const divRetorno = document.getElementById('divRetorno');
     const mensagemRetorno = document.getElementById('mensagemRetorno');
