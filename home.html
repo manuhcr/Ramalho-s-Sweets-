@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Pacifico&display=swap"
         rel="stylesheet">
     <title>Ramalho`s Sweets</title>
+    <script>
+        mes = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+        data = new Date
+    </script>
 </head>
 
 <body>
@@ -49,7 +54,17 @@
             </div>
 
         </section>
-       
+
+        <section>
+            <p
+                style="text-align: center; margin-top: 180px; margin-bottom: -100px ; color: rgb(128, 77, 0); font-size: 30px;">
+                <script>
+                    document.write(dia[data.getDay()] + "," + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+                </script>
+            </p>
+
+        </section>
+
         <!---mapa-->
         <section>
             <h1 class="localtitle">Onde estamos?</h1>
@@ -69,46 +84,44 @@
     </main>
     <main>
 
-            <h1 class="cardapiotitle">Nosso cardápio açucarado</h1>
-            <div class="divcardapio">
-                <div class="imagensmodal">
-                    <img class="doces" src="./imagens/bolosetortas.png" alt="Bolos e Tortas"
-                        onclick="abrirModal('bolos')">
-                    <h2 class="cardapiosubtitle">Bolos e Tortas</h2>
-                </div>
-
-                <div class="imagensmodal">
-                    <img class="doces" src="./imagens/docesbrasileiros.webp" alt="Doces Brasileiros"
-                        onclick="abrirModal('doces')">
-                    <h2 class="cardapiosubtitle">Doces Brasileiros</h2>
-                </div>
-                <div class="imagensmodal">
-                    <img class="doces" src="./imagens/sobremesasgeladas (2).webp" alt="Bolos e Tortas"
-                        onclick="abrirModal('colddesserts')">
-                    <h2 class="cardapiosubtitle">Sobremesas geladas</h2>
-                </div>
-
-                <div class="imagensmodal">
-                    <img class="doces" src="./imagens/chocobrownies.webp" alt="Doces Brasileiros"
-                        onclick="abrirModal('chocoandbrownie')">
-                    <h2 class="cardapiosubtitle">Chocolates e Brownies</h2>
-                </div>
-                <div class="imagensmodal">
-                    <img class="doces" src="./imagens/docesespeciais.webp" alt="Doces Brasileiros"
-                        onclick="abrirModal()">
-                    <h2 class="cardapiosubtitle">Doces Especiais</h2>
-                </div>
+        <h1 class="cardapiotitle">Nosso cardápio açucarado</h1>
+        <div class="divcardapio">
+            <div class="imagensmodal">
+                <img class="doces" src="./imagens/bolosetortas.png" alt="Bolos e Tortas" onclick="abrirModal('bolos')">
+                <h2 class="cardapiosubtitle">Bolos e Tortas</h2>
             </div>
 
-            <!-- Modal -->
-            <div id="modalcardapio" class="modalcardapio">
-                <div class="modalcardapio-content">
-                    <span class="close" onclick="fecharModal()">x</span>
-                    <div id="modalcardapio-Conteudo">
-                        <!-- Conteúdo dinâmico será inserido aqui pelo innerhtml do script.js-->
-                    </div>
+            <div class="imagensmodal">
+                <img class="doces" src="./imagens/docesbrasileiros.webp" alt="Doces Brasileiros"
+                    onclick="abrirModal('doces')">
+                <h2 class="cardapiosubtitle">Doces Brasileiros</h2>
+            </div>
+            <div class="imagensmodal">
+                <img class="doces" src="./imagens/sobremesasgeladas (2).webp" alt="Bolos e Tortas"
+                    onclick="abrirModal('colddesserts')">
+                <h2 class="cardapiosubtitle">Sobremesas geladas</h2>
+            </div>
+
+            <div class="imagensmodal">
+                <img class="doces" src="./imagens/chocobrownies.webp" alt="Doces Brasileiros"
+                    onclick="abrirModal('chocoandbrownie')">
+                <h2 class="cardapiosubtitle">Chocolates e Brownies</h2>
+            </div>
+            <div class="imagensmodal">
+                <img class="doces" src="./imagens/docesespeciais.webp" alt="Doces Brasileiros" onclick="abrirModal()">
+                <h2 class="cardapiosubtitle">Doces Especiais</h2>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modalcardapio" class="modalcardapio">
+            <div class="modalcardapio-content">
+                <span class="close" onclick="fecharModal()">x</span>
+                <div id="modalcardapio-Conteudo">
+                    <!-- Conteúdo dinâmico será inserido aqui pelo innerhtml do script.js-->
                 </div>
             </div>
+        </div>
 
         </section>
 
