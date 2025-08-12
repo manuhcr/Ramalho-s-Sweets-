@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffdede;
+    font-family: "Atma", serif;
+    background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
+}
+
+/*página melhores doces */
+.navbar {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center !important;
+}
+
+.logomarca {
+    align-items: center !important;
+}
+
+
+.links {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 24px;
+}
+
+.links:hover {
+    color: #682f10;
+    transition: all 0.2s;
+}
+
+.link {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+/*Slider*/
+.img-banner {
+    width: 100%;
+
+}
+
+.slider-container {
+    position: absolute;
+    position: absolute;
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+    top: 124px;
+    position: relative;
+    z-index: -1;
+    z-index: -1;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.bestcandytitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.bestcandysubtitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+
+.imgbestone {
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.titlebestone {
+    font-family: "Atma", serif;
+    font-weight: 300;
+    color: #221107;
+    font-size: 30px;
+}
+
+.textbestone {
+    font-family: "Atma", serif;
+    font-weight: 300;
+    color: #221107;
+    font-size: 20px !important;
+}
+
+.bestone21 {
+    text-align: center;
+    font-family: "Atma", serif;
+    font-weight: 400;
+    color: #221107;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 45%;
+    background: #f5e3e3;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.card-content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.imgbestone {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.textbestone {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome {
+    color: #704932;
+    text-align: center;
+    font-family: "Atma", serif;
+}
+
+.tituloDesc {
+    color: #682f10;
+    text-align: center;
+    font-family: "Atma", serif;
+}
+
+.tituloWin {
+    color: #5a2100;
+    text-align: center;
+    font-family: "Atma", serif;
+}
+
+.win {
+    color: #5a2100;
+    font-family: "Atma", serif;
+    white-space: pre-line;
+}
+
+.desc {
+    color: #221107;
+    white-space: pre-line;
+    font-size: 24px;
+    font-family: "Atma", serif;
+}
+
+.img {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer {
+    background-color: #f8f0e4;
+    color: #926840;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 0;
+    /* espaço interno sem exagero */
+    font-family: "Atma", cursive;
+    overflow: hidden;
+    /* garante que a onda não crie espaço extra */
+}
+
+.footer-wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    z-index: 0;
+    /* atrás de tudo */
+    pointer-events: none;
+    /* impede que a onda atrapalhe clique */
+}
+
+.footer-wave {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer-wave path {
+    filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.3));
+}
+
+.conteudo {
+    display: flex;
+    top: -50px;
+    left: 10px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.logofooter {
+    width: 160px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.contatofooter {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #5f412e;
+    font-size: 22px;
+    margin: 80px 0;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.contatofooter:hover {
+    color: #503824;
+    text-shadow: 1px 1px 3px rgb(73, 40, 17);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #eccaca;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    text-shadow: 1px 1px 3px #cf6f6f;
+    transform: scale(1.1);
+}
+
+
+
+.icon {
+    position: relative;
+    top: 6px;
+}
+
+/* fim footer */

@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffdede;
+    font-family: "Atma", serif;
+    background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
+}
+
+/* navbar*/
+.navbar {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center !important;
+}
+
+.logomarca {
+    align-items: center !important;
+}
+
+
+.links {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 24px;
+}
+
+.links:hover {
+    color: #682f10;
+    transition: all 0.2s;
+}
+
+.link {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/*Slider*/
+.img-banner {
+    width: 100%;
+
+}
+
+.slider-container {
+    position: absolute;
+    position: absolute;
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+    top: 124px;
+    position: relative;
+    z-index: -1;
+    z-index: -1;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Endereço */
+.localtitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    position: relative;
+    top: 140px;
+}
+
+.local {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+}
+
+.localizacao {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 150px;
+}
+
+.endereco {
+    font-size: 20px;
+    color: #221107 !important;
+    font-family: "Atma", serif;
+}
+
+.mapa {
+    border: #bd8a6f 2px solid !important;
+    border-radius: 20px;
+}
+
+/* fim endereço */
+/* Cardápio */
+.imagensmodal {
+    padding: 10px;
+}
+
+.doces {
+    opacity: 50%;
+    border-radius: 100%;
+    margin-top: 108px;
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    box-shadow: rgba(168, 133, 112, 0.952) 0px 3px 40px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+.doces:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+
+
+.divcardapio {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.cardapiotitle {
+    margin-top: 200px;
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+}
+
+.cardapiosubtitle {
+    margin-top: 1px;
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    font-size: 18px;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Atma", serif;
+    color: #582305;
+    border: #582305 2px solid;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #fffaf27e;
+}
+
+.d-flex:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+ul li {
+    list-style: none;
+    color: #704932;
+    font-size: 20px;
+    padding: 4px;
+    font-family: "Atma", sans-serif;
+}
+
+.cardapiotitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Modal cardápio */
+.modalcardapio {
+    transition: all 0.8s;
+    display: none;
+    position: fixed;
+    z-index: 1000 !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalcardapio-content {
+    font-family: "Atma", serif;
+    color: #582305;
+    border: #582305 2px solid;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #fffaf2;
+    text-align: left;
+    position: relative;
+    width: 60%;
+}
+
+.modalcardapio-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* video */
+.videotitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: 100px;
+}
+
+iframe {
+    border-radius: 22px;
+    -webkit-box-shadow: -2px 0px 17px 14px rgba(117, 78, 0, 0.18);
+    -moz-box-shadow: -2px 0px 17px 14px rgba(117, 78, 0, 0.18);
+    box-shadow: -2px 0px 17px 14px rgba(117, 78, 0, 0.18);
+}
+
+.div_video {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.div_iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fim video */
+/* footer */
+.footer {
+    background-color: #f8f0e4;
+    color: #926840;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 0;
+    /* espaço interno sem exagero */
+    font-family: "Atma", cursive;
+    overflow: hidden;
+    /* garante que a onda não crie espaço extra */
+}
+
+.footer-wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    z-index: 0;
+    /* atrás de tudo */
+    pointer-events: none;
+    /* impede que a onda atrapalhe clique */
+}
+
+.footer-wave {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer-wave path {
+    filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.3));
+}
+
+.conteudo {
+    display: flex;
+    top: -50px;
+    left: 10px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.logofooter {
+    width: 160px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.contatofooter {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #5f412e;
+    font-size: 22px;
+    margin: 80px 0;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.contatofooter:hover {
+    color: #503824;
+    text-shadow: 1px 1px 3px rgb(73, 40, 17);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #eccaca;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    text-shadow: 1px 1px 3px #cf6f6f;
+    transform: scale(1.1);
+}
+
+
+
+.icon {
+    position: relative;
+    top: 6px;
+}
+
+/* fim footer */

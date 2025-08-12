@@ -42,40 +42,40 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
         conteudo = `
         <h1 style = "text-align: center;"> Bolos e tortas </h1>
             <ul>
-                <li> <img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de chocolate com cobertura cremosa – <strong>R$ 49,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de morango com chantilly – <strong>R$ 54,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de cenoura com calda de chocolate – <strong>R$ 44,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Bolo Red Velvet com cream cheese – <strong>R$ 64,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Cheesecake de frutas vermelhas – <strong>R$ 69,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Torta holandesa – <strong>R$ 59,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Torta de limão com merengue – <strong>R$ 49,90 (1kg)</strong></li>
-                <li><img src = "imagens/pedaco-de-bolo.png" alt="cake"/> Torta de maçã caramelizada – <strong>R$ 55,90 (1kg)</strong></li>
+                <li> <img src = "./imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de chocolate com cobertura cremosa – <strong>R$ 49,90 (1kg)</strong></li>
+                <li><img src = "./imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de morango com chantilly – <strong>R$ 54,90 (1kg)</strong></li>
+                <li><img src = "../imagens/pedaco-de-bolo.png" alt="cake"/> Bolo de cenoura com calda de chocolate – <strong>R$ 44,90 (1kg)</strong></li>
+                <li><img src = "../imagens/pedaco-de-bolo.png" alt="cake"/> Bolo Red Velvet com cream cheese – <strong>R$ 64,90 (1kg)</strong></li>
+                <li><img src = "../imagens/pedaco-de-bolo.png" alt="cake"/> Cheesecake de frutas vermelhas – <strong>R$ 69,90 (1kg)</strong></li>
+                <li><img src = "../imagens/pedaco-de-bolo.png" alt="cake"/> Torta holandesa – <strong>R$ 59,90 (1kg)</strong></li>
+                <li><img src = "../imagens/pedaco-de-bolo.png" alt="cake"/> Torta de limão com merengue – <strong>R$ 49,90 (1kg)</strong></li>
+                <li><img src = "../imagens/pedaco-de-bolo.png" alt="cake"/> Torta de maçã caramelizada – <strong>R$ 55,90 (1kg)</strong></li>
             </ul>
         `;
     } else if (tipo == "doces") {
         conteudo = `
          <h1 style = "text-align: center;"> Doces Brasileiros </h1>
             <ul>
-                <li> <img  src = "imagens/brigadeiro.png" alt="candy"/> Brigadeiro gourmet (tradicional, branco, pistache, etc) – <strong>R$ 3,50 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Beijinho de coco – <strong>R$ 3,00 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Cajuzinho – <strong>R$ 3,00 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Bicho de pé – <strong>R$ 3,50 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Palha italiana – <strong>R$ 5,00 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Quindim <strong>– R$ 6,50 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Cocada (branca, queimada, com leite condensado)  <strong> – R$ 4,50 (unidade)</strong></li>
-                <li><img  src = "imagens/brigadeiro.png" alt="candy"/> Canjica doce <strong>– R$ 9,90 (250g)</strong></li>
+                <li> <img  src = "../imagens/brigadeiro.png" alt="candy"/> Brigadeiro gourmet (tradicional, branco, pistache, etc) – <strong>R$ 3,50 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Beijinho de coco – <strong>R$ 3,00 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Cajuzinho – <strong>R$ 3,00 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Bicho de pé – <strong>R$ 3,50 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Palha italiana – <strong>R$ 5,00 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Quindim <strong>– R$ 6,50 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Cocada (branca, queimada, com leite condensado)  <strong> – R$ 4,50 (unidade)</strong></li>
+                <li><img  src = "../imagens/brigadeiro.png" alt="candy"/> Canjica doce <strong>– R$ 9,90 (250g)</strong></li>
             </ul>
         `;
     } else if (tipo == "colddesserts") {
         conteudo = `
          <h1 style = "text-align: center;"> Sobremesas Geladas </h1>
          <ul>
-            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Pavê de chocolate – <strong>  R$ 49,90 (1kg) </strong></li>
-            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Mousse de maracujá – <strong> R$ 7,90 (taça)</strong></li>
-            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Mousse de chocolate com raspas – <strong> R$ 8,90 (taça)</strong></li>
-            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Torta gelada de morango – <strong>R$ 54,90 (1kg)</strong></li>
-            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Sorvete artesanal de diferentes sabores – <strong>R$ 12,90 (pote 500ml)</strong></li>
-            <li><img  src = "imagens/sorvete.png" alt="icecream"/> Geladinho gourmet (morango com ninho, ninho com chocolate, abacaxi com coco, etc)  – <strong>R$ 5,00 (unidade)</strong></li>    
+            <li><img  src = "../imagens/sorvete.png" alt="icecream"/> Pavê de chocolate – <strong>  R$ 49,90 (1kg) </strong></li>
+            <li><img  src = "../imagens/sorvete.png" alt="icecream"/> Mousse de maracujá – <strong> R$ 7,90 (taça)</strong></li>
+            <li><img  src = "../imagens/sorvete.png" alt="icecream"/> Mousse de chocolate com raspas – <strong> R$ 8,90 (taça)</strong></li>
+            <li><img  src = "../imagens/sorvete.png" alt="icecream"/> Torta gelada de morango – <strong>R$ 54,90 (1kg)</strong></li>
+            <li><img  src = "../imagens/sorvete.png" alt="icecream"/> Sorvete artesanal de diferentes sabores – <strong>R$ 12,90 (pote 500ml)</strong></li>
+            <li><img  src = "../imagens/sorvete.png" alt="icecream"/> Geladinho gourmet (morango com ninho, ninho com chocolate, abacaxi com coco, etc)  – <strong>R$ 5,00 (unidade)</strong></li>    
          </ul>
 
         `
@@ -83,11 +83,11 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
         conteudo = ` 
          <h1 style = "text-align: center;"> Chocolates e Brownies </h1>
          <ul>
-            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Brownie de chocolate – <strong>  R$ 7,90 (unidade) </strong></li>
-            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Brownie recheado (Nutella, doce de leite, Oreo) – <strong> R$ 9,90 (unidade)</strong></li>
-            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Cookie recheado com chocolate – <strong> R$ 6,50 (unidade)</strong></li>
-            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Trufas de chocolate (tradicional, ninho, nutella, sensação, etc) – <strong>R$ 4,90 (unidade)</strong></li>
-            <li><img  src = "imagens/chocolate.png" alt="chocolate"/> Barrinha de chocolate caseira – <strong>R$ 7,50 (unidade)</strong></li>  
+            <li><img  src = "../imagens/chocolate.png" alt="chocolate"/> Brownie de chocolate – <strong>  R$ 7,90 (unidade) </strong></li>
+            <li><img  src = "../imagens/chocolate.png" alt="chocolate"/> Brownie recheado (Nutella, doce de leite, Oreo) – <strong> R$ 9,90 (unidade)</strong></li>
+            <li><img  src = "../imagens/chocolate.png" alt="chocolate"/> Cookie recheado com chocolate – <strong> R$ 6,50 (unidade)</strong></li>
+            <li><img  src = "../imagens/chocolate.png" alt="chocolate"/> Trufas de chocolate (tradicional, ninho, nutella, sensação, etc) – <strong>R$ 4,90 (unidade)</strong></li>
+            <li><img  src = "../imagens/chocolate.png" alt="chocolate"/> Barrinha de chocolate caseira – <strong>R$ 7,50 (unidade)</strong></li>  
          </ul>
 
 
@@ -96,11 +96,11 @@ function abrirModal(tipo)  //Modal abre dependendo do tipo de doce(parâmetro)
         conteudo = `
          <h1 style = "text-align: center;"> Doces Especiais </h1>
          <ul>
-            <li> <img  src = "imagens/doces.png" alt="sweets"/> Macarons coloridos – <strong> R$ 5,50 (unidade) </strong></li>
-            <li> <img  src = "imagens/doces.png" alt="sweets"/> Churros – <strong> R$ 7,90 (unidade) </strong> e com coberturas e acompanhamentos como: nuttela ou doce de leite e ninho, nuttela ou doce de leite e morango, nutella ou doce de leite e paçoca, etc  <strong> (R$ 0,50) </strong></li>
-            <li> <img  src = "imagens/doces.png" alt="sweets"/> Rabanada açucarada – <strong> R$ 6,50 (unidade) </strong></li>
-            <li> <img  src = "imagens/doces.png" alt="sweets"/> Waffle com calda e frutas – <strong> R$ 14,90 (prato)</strong> com calda de chocolate ou mel e frutas frescas como: morangos, bananas, uvas e kiwis.</li>
-            <li> <img  src = "imagens/doces.png" alt="sweets"/> Donuts  – <strong>  R$ 8,90 (unidade) </strong> com cobertura de glacê de açúcar e opções de recheio, como doce de leite, nutella ou creme de baunilha.</li>
+            <li> <img  src = "../imagens/doces.png" alt="sweets"/> Macarons coloridos – <strong> R$ 5,50 (unidade) </strong></li>
+            <li> <img  src = "../imagens/doces.png" alt="sweets"/> Churros – <strong> R$ 7,90 (unidade) </strong> e com coberturas e acompanhamentos como: nuttela ou doce de leite e ninho, nuttela ou doce de leite e morango, nutella ou doce de leite e paçoca, etc  <strong> (R$ 0,50) </strong></li>
+            <li> <img  src = "../imagens/doces.png" alt="sweets"/> Rabanada açucarada – <strong> R$ 6,50 (unidade) </strong></li>
+            <li> <img  src = "../imagens/doces.png" alt="sweets"/> Waffle com calda e frutas – <strong> R$ 14,90 (prato)</strong> com calda de chocolate ou mel e frutas frescas como: morangos, bananas, uvas e kiwis.</li>
+            <li> <img  src = "../imagens/doces.png" alt="sweets"/> Donuts  – <strong>  R$ 8,90 (unidade) </strong> com cobertura de glacê de açúcar e opções de recheio, como doce de leite, nutella ou creme de baunilha.</li>
         </ul>
         `
     }

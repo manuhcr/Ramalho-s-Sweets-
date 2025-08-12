@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffdede;
+    font-family: "Atma", serif;
+    background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
+}
+
+/* navbar*/
+.navbar {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center !important;
+}
+
+.logomarca {
+    align-items: center !important;
+}
+
+
+.links {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 24px;
+}
+
+.links:hover {
+    color: #682f10;
+    transition: all 0.2s;
+}
+
+.link {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.encomendas-titulo {
+    color: #bd5a65;
+    font-size: xx-large;
+    text-align: center;
+    margin-left: -70px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+    border: 1px solid #613a26;
+    border-radius: 4px;
+}
+
+td,
+th {
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #441b0536;
+    color: #533321;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: #ffc9ce;
+}

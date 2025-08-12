@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffdede;
+    font-family: "Atma", serif;
+    background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
+}
+/*navbar*/
+.navbar {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center !important;
+}
+
+.logomarca {
+    align-items: center !important;
+}
+
+
+.links {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 24px;
+}
+
+.links:hover {
+    color: #682f10;
+    transition: all 0.2s;
+}
+
+.link {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+/* Contato */
+.contato {
+    margin-top: 120px;
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    background-color: #f8f0e4;
+    color: #926840;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 0;
+    /* espaço interno sem exagero */
+    font-family: "Atma", cursive;
+    overflow: hidden;
+    /* garante que a onda não crie espaço extra */
+}
+
+.footer-wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    z-index: 0;
+    /* atrás de tudo */
+    pointer-events: none;
+    /* impede que a onda atrapalhe clique */
+}
+
+.footer-wave {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer-wave path {
+    filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.3));
+}
+
+.conteudo {
+    display: flex;
+    top: -50px;
+    left: 10px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.logofooter {
+    width: 160px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.contatofooter {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #5f412e;
+    font-size: 22px;
+    margin: 80px 0;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.contatofooter:hover {
+    color: #503824;
+    text-shadow: 1px 1px 3px rgb(73, 40, 17);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #eccaca;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    text-shadow: 1px 1px 3px #cf6f6f;
+    transform: scale(1.1);
+}
+
+
+
+.icon {
+    position: relative;
+    top: 6px;
+}
+
+/* fim footer */
+
+/*Formulário*/
+.divContato {
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    margin-bottom: 0;
+    background-color: #eb8d96b6;
+    border-radius: 20px;
+    padding: 50px 0px 40px 40px;
+    border: 2px solid #704932 !important;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+form legend {
+    text-align: center;
+    margin-left: -30px;
+    margin-bottom: 30px;
+    color: #503824;
+    font-weight: 600;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+    border: none;
+    background-color: #ffeded;
+    border-radius: 8px;
+}
+
+
+.check {
+    margin: 20px 0;
+}
+
+.select {
+    background-color: #ffdddd !important;
+    border: none;
+    border-radius: 6px;
+}
+
+
+.enviar {
+    width: 20%;
+    padding: 15px 0;
+    justify-self: center;
+    margin-bottom: 20px;
+    background: #5f412e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    display: flex;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+.enviar:hover {
+    background: #cf6f6f;
+    transform: scale(1.2);
+}
+
+/*Div do retorno do formulário*/
+.divRetorno {
+    margin-bottom: 30px;
+    background-color: #ffdddd;
+    border-radius: 10px;
+    border: 1px solid #503824;
+    margin-top: 20px;
+    width: 80%;
+    justify-self: center;
+    display: flex;
+}
+
+.divRetorno p {
+    font-size: 24px;
+    padding: 30px;
+    color: #704932;
+}

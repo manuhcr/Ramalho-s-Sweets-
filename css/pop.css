@@ -1,0 +1,30 @@
+/*Estilização do Slider da POP de produtos*/
+.sliderPop img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.sliderPop {
+    justify-content: center;
+    display: flex;
+}
+
+#prevBtn {
+    width: 6% !important;
+    height: 25px !important;
+    margin-top: 190px;
+    background-color: #EB8D96;
+    border: none;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+#nextBtn {
+    width: 6% !important;
+    height: 25px !important;
+    margin-top: 190px;
+    background-color: #EB8D96;
+    border: none;
+    border-radius: 6px;
+    margin-left: 20px;
+}

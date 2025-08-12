@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffdede;
+    font-family: "Atma", serif;
+    background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
+}
+
+/* navbar*/
+.navbar {
+    background-color: #EB8D96;
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center !important;
+}
+
+.logomarca {
+    align-items: center !important;
+}
+
+
+.links {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 24px;
+}
+
+.links:hover {
+    color: #682f10;
+    transition: all 0.2s;
+}
+
+.link {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/*Slider*/
+.img-banner {
+    width: 100%;
+
+}
+
+.slider-container {
+    position: absolute;
+    position: absolute;
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+    top: 124px;
+    position: relative;
+    z-index: -1;
+    z-index: -1;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/*Sobre nós*/
+.sobretitle {
+    font-family: "Atma", serif;
+    color: #221107;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.img-doceria {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 30%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.sobre {
+    margin-top: 60px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5a2100;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.divsobre {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-top: -50px;
+}
+
+/* RESPONSIVO 👇 */
+@media (max-width: 768px) {
+    .divsobre {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .img-doceria {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .sobre {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #f8f0e4;
+    color: #926840;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 0;
+    /* espaço interno sem exagero */
+    font-family: "Atma", cursive;
+    overflow: hidden;
+    /* garante que a onda não crie espaço extra */
+}
+
+.footer-wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    z-index: 0;
+    /* atrás de tudo */
+    pointer-events: none;
+    /* impede que a onda atrapalhe clique */
+}
+
+.footer-wave {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer-wave path {
+    filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.3));
+}
+
+.conteudo {
+    display: flex;
+    top: -50px;
+    left: 10px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.logofooter {
+    width: 160px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.contatofooter {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #5f412e;
+    font-size: 22px;
+    margin: 80px 0;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.contatofooter:hover {
+    color: #503824;
+    text-shadow: 1px 1px 3px rgb(73, 40, 17);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #eccaca;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    text-shadow: 1px 1px 3px #cf6f6f;
+    transform: scale(1.1);
+}
+
+
+
+.icon {
+    position: relative;
+    top: 6px;
+}
+
+/* fim footer */
