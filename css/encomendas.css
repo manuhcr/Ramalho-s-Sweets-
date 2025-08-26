@@ -7,6 +7,17 @@ body {
     background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
 }
 
+/*Destaque da informação inválida*/
+
+.info-invalida {
+    background-color: rgb(216, 74, 74) !important;
+    color: #ffffff !important;
+}
+
+.texto-erro {
+    color: rgb(216, 74, 74) !important;
+}
+
 /* navbar*/
 .navbar {
     background-color: #EB8D96;
@@ -82,4 +93,84 @@ th {
 th {
     font-weight: bold;
     background-color: #ffc9ce;
+}
+
+
+/* Formulário em estilo de card */
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#frmContato {
+
+    background: #ffe9e9;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título */
+#frmContato legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e97d8b;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Labels */
+#frmContato label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+    color: #69341c;
+}
+
+/* Inputs e Select */
+#frmContato input,
+#frmContato select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+/* Foco no campo */
+#frmContato input:focus,
+#frmContato select:focus {
+    outline: none;
+    border-color: #bd5a65;
+    box-shadow: 0 0 6px #682f10;
+}
+
+/* Select (opções) */
+#frmContato select optgroup {
+    font-weight: bold;
+    color: #522d1b;
+}
+
+/* Botão (se quiser adicionar depois) */
+#frmContato button {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 130px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #bd5a65;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#frmContato button:hover {
+    background: #613a26;
 }

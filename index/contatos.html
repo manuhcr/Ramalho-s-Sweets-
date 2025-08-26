@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="shortcut icon" href="../imagens/logo ramalho´s sweets.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Ramalho`s Sweets</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="link">
+                <a id="link" href="../index/home.html" class="links">Home</a>
+            </div>
+            <div class="link">
+                <a id="link" href="../index/sobrenos.html" class="links">Nossa história</a>
+            </div>
+            <div class="logomarca">
+                <a href="../index/encomendas.html"><img class="logo" width="120" src="../imagens/logo ramalho´s sweets.png"></a>
+            </div>
+            <div class="link">
+                <a id="link" href="../index/contatos.html" class="links">Contato</a>
+            </div>
+            <div class="link">
+                <a id="link" href="../index/melhoresdoces.html" class="links">Melhores doces</a>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <br><br>
+        <h1 style="color: #A86B49; text-align: center;">
+            Quer saber alguma informação ou fazer algum comentário? <br> Fale com a gente!
+        </h1>
+        <div class="divContato">
+            <form id="frmContato">
+                <legend>Dados Pessoais</legend>
+                <label for="nomesobrenome"> Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <label>Como prefere o nosso contato?
+                    <input class="radio" type="radio" value="radio-mail" name="Contato" id="contatoEmail"> E-mail
+                    <input class="radio" type="radio" value="radio-telefone" name="Contato" id="contatoTelefone">
+                    Telefone
+                    <input class="radio" type="radio" value="radio-whatsapp" name="Contato" id="contatoWhatsapp">
+                    Whatsapp
+                </label>
+
+                <br>
+                <label for="motivoContato">Qual o motivo do seu contato?
+                    <select class="select" id="motivoContato">
+                        <option value="0">Selecione</option>
+                        <option value="1">Dúvida</option>
+                        <option value="2">Sugestão</option>
+                        <option value="3">Elogio</option>
+                        <option value="4">Reclamação</option>
+                    </select>
+                </label>
+                <br>
+                <div class="div">
+                    <label>
+                        <input type="checkbox" id="receberEmail" class="chk check"> Gostaria de receber nossas novidades
+                        por e-mail?
+                    </label>
+                    <input type="submit" id="enviar" value="Enviar" class="enviar">
+                </div>
+            </form>
+        </div>
+        <h1 style="color: rgb(134, 102, 71); text-align: center;">Resposta:</h1>
+        <div class="divRetorno" id="divRetorno">
+
+            <p id="mensagemRetorno"></p>
+        </div>
+    </div>
+    <section>
+        <footer class="footer">
+
+            <div class="footer-wave-container">
+                <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    preserveAspectRatio="none">
+                    <path fill="#673f2f" fill-opacity="1" d="M0,256
+                            C60,224,120,160,180,160
+                            C240,160,300,224,360,208
+                            C420,192,480,96,540,112
+                            C600,128,660,224,720,208
+                            C780,192,840,96,900,112
+                            C960,128,1020,224,1080,208
+                            C1140,192,1200,96,1260,112
+                            C1320,128,1380,224,1440,208
+                            L1440,320L0,320Z">
+                    </path>
+                </svg>
+
+            </div>
+
+
+            <div class="conteudo">
+                <p class="contatofooter">Quer encomendar?</p>
+                <p class="contatofooter"> Rua dos Doces, 123 - Cidade Açucarada</p>
+                <p class="contatofooter"> Quer mandar um feedback?</p>
+                <p class="contatofooter"> contato@ramalhossweets.com</p>
+
+            </div>
+            <div class="social-icons">
+                <div class="logomarcafooter">
+                    <img class="logofooter" width="100" src="../imagens/logo ramalho´s sweets.png"
+                        alt="Logo Ramalho's Sweets">
+                </div>
+                <a href="https://instagram.com/ramalhossweets" target="_blank"><img class="icon"
+                        src="../imagens/instagram.png" alt="" srcset=""> Instagram</a>
+                <a href="https://facebook.com/ramalhossweets" target="_blank"><img class="icon"
+                        src="../imagens/facebook (1).png" alt="" srcset=""> Facebook</a>
+                <a href="https://wa.me/5511987654321" target="_blank"><img class="icon"
+                        src="../imagens/whatsapp (1).png" alt="" srcset=""> WhatsApp</a>
+            </div>
+        </footer>
+
+
+
+
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

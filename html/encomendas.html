@@ -14,7 +14,7 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <nav id="navbar" class="navbar">
             <div class="link">
                 <a id="link" href="../html/home.html" class="links">Home</a>
@@ -23,7 +23,8 @@
                 <a id="link" href="../html/sobrenos.html" class="links">Nossa história</a>
             </div>
             <div class="logomarca">
-                <a href="../html/encomendas.html"><img class="logo" width="120" src="../imagens/logo ramalho´s sweets.png"></a>
+                <a href="../html/encomendas.html"><img class="logo" width="120"
+                        src="../imagens/logo ramalho´s sweets.png"></a>
             </div>
             <div class="link">
                 <a id="link" href="../html/contatos.html" class="links">Contato</a>
@@ -43,7 +44,7 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Produto</th>
+                        <th>Doce</th>
                         <th>Quantidade</th>
                         <th>Valor Unitário</th>
                         <th>Total</th>
@@ -61,65 +62,144 @@
                             2
                         </td>
                         <td class="unitario">
-                            54,90
+                            54.90
                         </td>
                         <td class="total"></td>
                     </tr>
                     <tr class="encomenda-cliente">
                         <td class="nome">
-                        Ana Paula
-                    </td>
-                    <td class="doce">
-                        Bolo de Chocolate com cobertura Cremosa
-                    </td>
-                    <td class="qtd">
-                        2
-                    </td>
+                            Ana Paula
+                        </td>
+                        <td class="doce">
+                            Bolo de Chocolate com cobertura Cremosa
+                        </td>
+                        <td class="qtd">
+                            2
+                        </td>
 
-                    <td class="unitario">
-                        49,90
-                    </td>
-                    <td class="total"></td>
+                        <td class="unitario">
+                            49.90
+                        </td>
+                        <td class="total"></td>
                     </tr>
-                    
+
                     <tr class="encomenda-cliente">
-                         <td class="nome">
-                        Manoela
-                    </td>
-                    <td class="doce">
-                        Brigadeiro Gourmet branco
-                    </td>
-                    <td class="qtd">
-                        1
-                    </td>
-                    <td class="unitario">
-                        3,50
-                    </td>
-                    <td class="total"></td>
+                        <td class="nome">
+                            Manoela
+                        </td>
+                        <td class="doce">
+                            Brigadeiro Gourmet branco
+                        </td>
+                        <td class="qtd">
+                            1
+                        </td>
+                        <td class="unitario">
+                            3.50
+                        </td>
+                        <td class="total"></td>
                     </tr>
-                   
+
                     <tr class="encomenda-cliente">
-                         <td class="nome">
-                        Livia
-                    </td>
-                    <td class="doce">
-                        Cookie recheado com chocolate
-                    </td>
-                    <td class="qtd">
-                        3
-                    </td>
-                    <td class="unitario">
-                        6,50
-                    </td>
-                    <td class="total"></td>
+                        <td class="nome">
+                            Livia
+                        </td>
+                        <td class="doce">
+                            Cookie recheado com chocolate
+                        </td>
+                        <td class="qtd">
+                            3
+                        </td>
+                        <td class="unitario">
+                            6.50
+                        </td>
+                        <td class="total"></td>
                     </tr>
                     </tr>
-                   
+
                 </tbody>
             </table>
         </section>
+        <section>
+            <form id="frmContato">
+                <legend>Adicionar encomenda</legend>
+                <label for="nome"> Nome</label>
+                <input type="text" id="nome" class="input-padrao" required>
+
+                <label for="qtd">Quantidade</label>
+                <input type="qtd" id="qtd" class="input-padrao" required>
+
+
+                <label for="doce">Escolha um doce:</label>
+                <select id="doce" name="doce">
+                    <option value="">Selecione um doce</option>
+
+                    <!-- Bolos e Tortas -->
+                    <optgroup label="Bolos e Tortas">
+                        <option value="bolo-chocolate">Bolo de chocolate com cobertura cremosa – R$ 49,90 (1kg)</option>
+                        <option value="bolo-morango">Bolo de morango com chantilly – R$ 54,90 (1kg)</option>
+                        <option value="bolo-cenoura">Bolo de cenoura com calda de chocolate – R$ 44,90 (1kg)</option>
+                        <option value="bolo-red-velvet">Bolo Red Velvet com cream cheese – R$ 64,90 (1kg)</option>
+                        <option value="cheesecake">Cheesecake de frutas vermelhas – R$ 69,90 (1kg)</option>
+                        <option value="torta-holandesa">Torta holandesa – R$ 59,90 (1kg)</option>
+                        <option value="torta-limao">Torta de limão com merengue – R$ 49,90 (1kg)</option>
+                        <option value="torta-maca">Torta de maçã caramelizada – R$ 55,90 (1kg)</option>
+                    </optgroup>
+
+                    <!-- Doces Brasileiros -->
+                    <optgroup label="Doces Brasileiros">
+                        <option value="brigadeiro">Brigadeiro gourmet – R$ 3,50 (unidade)</option>
+                        <option value="beijinho">Beijinho de coco – R$ 3,00 (unidade)</option>
+                        <option value="cajuzinho">Cajuzinho – R$ 3,00 (unidade)</option>
+                        <option value="bicho-de-pe">Bicho de pé – R$ 3,50 (unidade)</option>
+                        <option value="palha-italiana">Palha italiana – R$ 5,00 (unidade)</option>
+                        <option value="quindim">Quindim – R$ 6,50 (unidade)</option>
+                        <option value="cocada">Cocada (branca, queimada, leite condensado) – R$ 4,50 (unidade)</option>
+                        <option value="canjica">Canjica doce – R$ 9,90 (250g)</option>
+                    </optgroup>
+
+                    <!-- Sobremesas Geladas -->
+                    <optgroup label="Sobremesas Geladas">
+                        <option value="pave-chocolate">Pavê de chocolate – R$ 49,90 (1kg)</option>
+                        <option value="mousse-maracuja">Mousse de maracujá – R$ 7,90 (taça)</option>
+                        <option value="mousse-chocolate">Mousse de chocolate com raspas – R$ 8,90 (taça)</option>
+                        <option value="torta-gelada-morango">Torta gelada de morango – R$ 54,90 (1kg)</option>
+                        <option value="sorvete-artesanal">Sorvete artesanal – R$ 12,90 (500ml)</option>
+                        <option value="geladinho">Geladinho gourmet – R$ 5,00 (unidade)</option>
+                    </optgroup>
+
+                    <!-- Chocolates e Brownies -->
+                    <optgroup label="Chocolates e Brownies">
+                        <option value="brownie">Brownie de chocolate – R$ 7,90 (unidade)</option>
+                        <option value="brownie-recheado">Brownie recheado (Nutella, Oreo, etc) – R$ 9,90 (unidade)
+                        </option>
+                        <option value="cookie">Cookie recheado com chocolate – R$ 6,50 (unidade)</option>
+                        <option value="trufa">Trufas de chocolate – R$ 4,90 (unidade)</option>
+                        <option value="barrinha">Barrinha de chocolate caseira – R$ 7,50 (unidade)</option>
+                    </optgroup>
+
+                    <!-- Doces Especiais -->
+                    <optgroup label="Doces Especiais">
+                        <option value="macaron">Macarons coloridos – R$ 5,50 (unidade)</option>
+                        <option value="churros">Churros com coberturas – R$ 7,90 (+ R$ 0,50 adicionais)</option>
+                        <option value="rabanada">Rabanada açucarada – R$ 6,50 (unidade)</option>
+                        <option value="waffle">Waffle com calda e frutas – R$ 14,90 (prato)</option>
+                        <option value="donut">Donuts – R$ 8,90 (unidade)</option>
+                    </optgroup>
+                </select>
+
+
+
+                <label for="unit">Valor Unitário</label>
+                <input type="unit" id="unit" class="input-padrao" placeholder="" required>
+
+                <button id="add" type="submit">Enviar</button>
+
+
+            </form>
+        </section>
     </main>
     <script src="../js/encomendas.js"></script>
+    <script src="../js/adicionar_encomenda.js"></script>
 </body>
 
 </html>
