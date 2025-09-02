@@ -120,79 +120,103 @@
             </table>
         </section>
         <section>
-            <form id="frmContato">
+            <dic class="text-align center">
                 <legend>Adicionar encomenda</legend>
-                <label for="nome"> Nome</label>
-                <input type="text" id="nome" class="input-padrao" required>
+            </dic>
+            <form id="frmContato">
+                <div class="input">
 
-                <label for="qtd">Quantidade</label>
-                <input type="qtd" id="qtd" class="input-padrao" required>
-
-
-                <label for="doce">Escolha um doce:</label>
-                <select id="doce" name="doce">
-                    <option value="">Selecione um doce</option>
-
-                    <!-- Bolos e Tortas -->
-                    <optgroup label="Bolos e Tortas">
-                        <option value="bolo-chocolate">Bolo de chocolate com cobertura cremosa – R$ 49,90 (1kg)</option>
-                        <option value="bolo-morango">Bolo de morango com chantilly – R$ 54,90 (1kg)</option>
-                        <option value="bolo-cenoura">Bolo de cenoura com calda de chocolate – R$ 44,90 (1kg)</option>
-                        <option value="bolo-red-velvet">Bolo Red Velvet com cream cheese – R$ 64,90 (1kg)</option>
-                        <option value="cheesecake">Cheesecake de frutas vermelhas – R$ 69,90 (1kg)</option>
-                        <option value="torta-holandesa">Torta holandesa – R$ 59,90 (1kg)</option>
-                        <option value="torta-limao">Torta de limão com merengue – R$ 49,90 (1kg)</option>
-                        <option value="torta-maca">Torta de maçã caramelizada – R$ 55,90 (1kg)</option>
-                    </optgroup>
-
-                    <!-- Doces Brasileiros -->
-                    <optgroup label="Doces Brasileiros">
-                        <option value="brigadeiro">Brigadeiro gourmet – R$ 3,50 (unidade)</option>
-                        <option value="beijinho">Beijinho de coco – R$ 3,00 (unidade)</option>
-                        <option value="cajuzinho">Cajuzinho – R$ 3,00 (unidade)</option>
-                        <option value="bicho-de-pe">Bicho de pé – R$ 3,50 (unidade)</option>
-                        <option value="palha-italiana">Palha italiana – R$ 5,00 (unidade)</option>
-                        <option value="quindim">Quindim – R$ 6,50 (unidade)</option>
-                        <option value="cocada">Cocada (branca, queimada, leite condensado) – R$ 4,50 (unidade)</option>
-                        <option value="canjica">Canjica doce – R$ 9,90 (250g)</option>
-                    </optgroup>
-
-                    <!-- Sobremesas Geladas -->
-                    <optgroup label="Sobremesas Geladas">
-                        <option value="pave-chocolate">Pavê de chocolate – R$ 49,90 (1kg)</option>
-                        <option value="mousse-maracuja">Mousse de maracujá – R$ 7,90 (taça)</option>
-                        <option value="mousse-chocolate">Mousse de chocolate com raspas – R$ 8,90 (taça)</option>
-                        <option value="torta-gelada-morango">Torta gelada de morango – R$ 54,90 (1kg)</option>
-                        <option value="sorvete-artesanal">Sorvete artesanal – R$ 12,90 (500ml)</option>
-                        <option value="geladinho">Geladinho gourmet – R$ 5,00 (unidade)</option>
-                    </optgroup>
-
-                    <!-- Chocolates e Brownies -->
-                    <optgroup label="Chocolates e Brownies">
-                        <option value="brownie">Brownie de chocolate – R$ 7,90 (unidade)</option>
-                        <option value="brownie-recheado">Brownie recheado (Nutella, Oreo, etc) – R$ 9,90 (unidade)
-                        </option>
-                        <option value="cookie">Cookie recheado com chocolate – R$ 6,50 (unidade)</option>
-                        <option value="trufa">Trufas de chocolate – R$ 4,90 (unidade)</option>
-                        <option value="barrinha">Barrinha de chocolate caseira – R$ 7,50 (unidade)</option>
-                    </optgroup>
-
-                    <!-- Doces Especiais -->
-                    <optgroup label="Doces Especiais">
-                        <option value="macaron">Macarons coloridos – R$ 5,50 (unidade)</option>
-                        <option value="churros">Churros com coberturas – R$ 7,90 (+ R$ 0,50 adicionais)</option>
-                        <option value="rabanada">Rabanada açucarada – R$ 6,50 (unidade)</option>
-                        <option value="waffle">Waffle com calda e frutas – R$ 14,90 (prato)</option>
-                        <option value="donut">Donuts – R$ 8,90 (unidade)</option>
-                    </optgroup>
-                </select>
+                    <label for="nome"> Nome</label>
+                    <input type="text" id="nome" class="input-padrao" required>
+                </div>
 
 
+                <div class="input"><label for="qtd">Quantidade</label>
+                    <input type="qtd" id="qtd" class="input-padrao" required>
+                </div>
 
-                <label for="unit">Valor Unitário</label>
-                <input type="unit" id="unit" class="input-padrao" placeholder="" required>
 
-                <button id="add" type="submit">Enviar</button>
+                <div class="input"> <label for="doce">Escolha um doce:</label>
+                    <select id="doce" name="doce">
+                        <option value="">Selecione um doce</option>
+
+                        <!-- Bolos e Tortas -->
+                        <optgroup label="Bolos e Tortas">
+                            <option value="Bolo de chocolate com cobertura cremosa">Bolo de chocolate com cobertura
+                                cremosa – R$ 49,90 (1kg)</option>
+                            <option value="Bolo de morango com chantilly">Bolo de morango com chantilly – R$ 54,90 (1kg)
+                            </option>
+                            <option value="Bolo de cenoura com calda de chocolate">Bolo de cenoura com calda de
+                                chocolate – R$ 44,90 (1kg)</option>
+                            <option value="Bolo Red Velvet com cream cheese">Bolo Red Velvet com cream cheese – R$ 64,90
+                                (1kg)</option>
+                            <option value="Cheesecake de frutas vermelhas">Cheesecake de frutas vermelhas – R$ 69,90
+                                (1kg)</option>
+                            <option value="Torta holandesa">Torta holandesa – R$ 59,90 (1kg)</option>
+                            <option value="Torta de limão com merengue">Torta de limão com merengue – R$ 49,90 (1kg)
+                            </option>
+                            <option value="Torta de maçã caramelizada">Torta de maçã caramelizada – R$ 55,90 (1kg)
+                            </option>
+                        </optgroup>
+
+                        <!-- Doces Brasileiros -->
+                        <optgroup label="Doces Brasileiros">
+                            <option value="Brigadeiro gourmet">Brigadeiro gourmet – R$ 3,50 (unidade)</option>
+                            <option value="Beijinho de coco">Beijinho de coco – R$ 3,00 (unidade)</option>
+                            <option value="Cajuzinho">Cajuzinho – R$ 3,00 (unidade)</option>
+                            <option value="Bicho de pé">Bicho de pé – R$ 3,50 (unidade)</option>
+                            <option value="Palha italiana">Palha italiana – R$ 5,00 (unidade)</option>
+                            <option value="Quindim">Quindim – R$ 6,50 (unidade)</option>
+                            <option value="Cocada (branca, queimada, leite condensado)">Cocada (branca, queimada, leite
+                                condensado) – R$ 4,50 (unidade)</option>
+                            <option value="Canjica doce">Canjica doce – R$ 9,90 (250g)</option>
+                        </optgroup>
+
+                        <!-- Sobremesas Geladas -->
+                        <optgroup label="Sobremesas Geladas">
+                            <option value="Pavê de chocolate">Pavê de chocolate – R$ 49,90 (1kg)</option>
+                            <option value="Mousse de maracujá">Mousse de maracujá – R$ 7,90 (taça)</option>
+                            <option value="Mousse de chocolate com raspas">Mousse de chocolate com raspas – R$ 8,90
+                                (taça)</option>
+                            <option value="Torta gelada de morango">Torta gelada de morango – R$ 54,90 (1kg)</option>
+                            <option value="Sorvete artesanal">Sorvete artesanal – R$ 12,90 (500ml)</option>
+                            <option value="Geladinho gourmet">Geladinho gourmet – R$ 5,00 (unidade)</option>
+                        </optgroup>
+
+                        <!-- Chocolates e Brownies -->
+                        <optgroup label="Chocolates e Brownies">
+                            <option value="Brownie de chocolate">Brownie de chocolate – R$ 7,90 (unidade)</option>
+                            <option value="Brownie recheado (Nutella, Oreo, etc)">Brownie recheado (Nutella, Oreo, etc)
+                                – R$ 9,90 (unidade)</option>
+                            <option value="Cookie recheado com chocolate">Cookie recheado com chocolate – R$ 6,50
+                                (unidade)</option>
+                            <option value="Trufas de chocolate">Trufas de chocolate – R$ 4,90 (unidade)</option>
+                            <option value="Barrinha de chocolate caseira">Barrinha de chocolate caseira – R$ 7,50
+                                (unidade)</option>
+                        </optgroup>
+
+                        <!-- Doces Especiais -->
+                        <optgroup label="Doces Especiais">
+                            <option value="Macarons coloridos">Macarons coloridos – R$ 5,50 (unidade)</option>
+                            <option value="Churros com coberturas">Churros com coberturas – R$ 7,90 (+ R$ 0,50
+                                adicionais)</option>
+                            <option value="Rabanada açucarada">Rabanada açucarada – R$ 6,50 (unidade)</option>
+                            <option value="Waffle com calda e frutas">Waffle com calda e frutas – R$ 14,90 (prato)
+                            </option>
+                            <option value="Donuts">Donuts – R$ 8,90 (unidade)</option>
+                        </optgroup>
+
+
+
+                    </select>
+                </div>
+
+
+
+                <div class="input"> <label for="unit">Valor Unitário</label>
+                    <input type="text" id="unit" class="input-padrao" placeholder="" required>
+                </div>
+                <div> <button id="add" type="submit">Enviar</button></div>
 
 
             </form>

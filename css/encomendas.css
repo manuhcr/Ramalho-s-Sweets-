@@ -97,30 +97,30 @@ th {
 
 
 /* Formulário em estilo de card */
-section {
-    display: flex;
-    justify-content: center;
-}
 
-#frmContato {
 
-    background: #ffe9e9;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-/* Título */
-#frmContato legend {
+section legend {
     font-size: 1.4rem;
     font-weight: bold;
     color: #e97d8b;
     margin-bottom: 15px;
     display: block;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
+
+#frmContato {
+    background: #ffe9e9;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    display: flex;
+    justify-self: center;
+
+}
+
 
 /* Labels */
 #frmContato label {
@@ -135,11 +135,16 @@ section {
 #frmContato select {
     width: 100%;
     padding: 12px;
+
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 1rem;
     transition: all 0.3s;
     box-sizing: border-box;
+}
+
+.input {
+    margin-right: 20px;
 }
 
 /* Foco no campo */
@@ -158,9 +163,9 @@ section {
 
 /* Botão (se quiser adicionar depois) */
 #frmContato button {
-    margin-top: 20px;
-    width: 50%;
-    margin-left: 130px;
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 10px;
     padding: 12px;
     border: none;
     border-radius: 8px;
