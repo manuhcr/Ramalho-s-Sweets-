@@ -6,14 +6,14 @@ let unitario = document.querySelector("#unit").textContent;
 
 
 
-botaoAdd.addEventListener("click", function (event) {
+botaoAdd.addEventListener("submit", function (event) {
     //event.preventDefault(); espera a proxima linha do código
     event.preventDefault();
     let form = document.querySelector("#frmContato");
     //Pega o novo pedido
     let novoPedido = obtemEncomenda(form);
     //Pega a tabela de pedidos
-    let tabela = document.querySelector(".tabela-clientes")
+    let tabela = document.querySelector(".tabela-clientes");
     //Insere novo pedido na tabela
     tabela.appendChild(criaLinha(novoPedido));
 
